@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "resolve_bw.py", line 142, in <module>
+    cim[i*5:i*5+80, j*5:j*5+80] = resolve_bw(image.crop((j, i, j+16, i+16)), 16)
+  File "resolve_bw.py", line 53, in resolve_bw
+    s.fit(l[:,0:2],l[:,2],u)
+  File "/home/ee/btech/ee1180500/Codes/LapMCM_regress.py", line 76, in fit
+    h, b, beta_hat = np.array(optimize(obj, constraints), dtype=object)
+  File "/home/ee/btech/ee1180500/Codes/LapMCM_regress.py", line 67, in optimize
+    mosek.iparam.intpnt_solve_form: mosek.solveform.dual}, verbose=True)
+  File "/home/ee/btech/ee1180500/anaconda3/envs/BTP/lib/python3.7/site-packages/cvxpy/problems/problem.py", line 472, in solve
+    return solve_func(self, *args, **kwargs)
+  File "/home/ee/btech/ee1180500/anaconda3/envs/BTP/lib/python3.7/site-packages/cvxpy/problems/problem.py", line 978, in _solve
+    self.unpack_results(solution, solving_chain, inverse_data)
+  File "/home/ee/btech/ee1180500/anaconda3/envs/BTP/lib/python3.7/site-packages/cvxpy/problems/problem.py", line 1302, in unpack_results
+    "Try another solver, or solve with verbose=True for more "
+cvxpy.error.SolverError: Solver 'MOSEK' failed. Try another solver, or solve with verbose=True for more information.

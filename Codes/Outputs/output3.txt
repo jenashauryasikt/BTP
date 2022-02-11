@@ -1,0 +1,92 @@
+===============================
+2620911.pbshpc
+csky023.hpc.iitd.ac.in
+===============================
+CREATING ENV
+START PYTHON
+===============================================================================
+                                     CVXPY                                     
+                                    v1.1.17                                    
+===============================================================================
+(CVXPY) Jan 24 12:58:50 PM: Your problem has 5634 variables, 6 constraints, and 0 parameters.
+(CVXPY) Jan 24 12:58:50 PM: It is compliant with the following grammars: DCP, DQCP
+(CVXPY) Jan 24 12:58:50 PM: (If you need to solve this problem multiple times, but with different data, consider using parameters.)
+(CVXPY) Jan 24 12:58:50 PM: CVXPY will first compile your problem; then, it will invoke a numerical solver to obtain a solution.
+-------------------------------------------------------------------------------
+                                  Compilation                                  
+-------------------------------------------------------------------------------
+(CVXPY) Jan 24 12:58:50 PM: Compiling problem (target solver=MOSEK).
+(CVXPY) Jan 24 12:58:50 PM: Reduction chain: Dcp2Cone -> CvxAttr2Constr -> ConeMatrixStuffing -> MOSEK
+(CVXPY) Jan 24 12:58:50 PM: Applying reduction Dcp2Cone
+(CVXPY) Jan 24 12:58:50 PM: Applying reduction CvxAttr2Constr
+(CVXPY) Jan 24 12:58:50 PM: Applying reduction ConeMatrixStuffing
+(CVXPY) Jan 24 01:06:20 PM: Applying reduction MOSEK
+(CVXPY) Jan 24 01:12:13 PM: Finished problem compilation (took 8.029e+02 seconds).
+-------------------------------------------------------------------------------
+                                Numerical solver                               
+-------------------------------------------------------------------------------
+(CVXPY) Jan 24 01:12:13 PM: Invoking solver MOSEK  to obtain a solution.
+
+
+Problem
+  Name                   :                 
+  Objective sense        : max             
+  Type                   : LO (linear optimization problem)
+  Constraints            : 42004           
+  Cones                  : 0               
+  Scalar variables       : 75811           
+  Matrix variables       : 0               
+  Integer variables      : 0               
+
+Optimizer started.
+Problem
+  Name                   :                 
+  Objective sense        : max             
+  Type                   : LO (linear optimization problem)
+  Constraints            : 42004           
+  Cones                  : 0               
+  Scalar variables       : 75811           
+  Matrix variables       : 0               
+  Integer variables      : 0               
+
+Optimizer  - threads                : 2               
+Optimizer  - solved problem         : the dual        
+Optimizer  - Constraints            : 73250
+Optimizer  - Cones                  : 0
+Optimizer  - Scalar variables       : 111661            conic                  : 0               
+Optimizer  - Semi-definite variables: 0                 scalarized             : 0               
+Factor     - setup time             : 22.42             dense det. time        : 4.62            
+Factor     - ML order time          : 0.02              GP order time          : 0.00            
+Factor     - nonzeros before factor : 5.79e+07          after factor           : 5.79e+07        
+Factor     - dense dim.             : 1787              flops                  : 5.15e+10        
+ITE PFEAS    DFEAS    GFEAS    PRSTATUS   POBJ              DOBJ              MU       TIME  
+0   2.1e+00  2.4e+00  6.2e+00  0.00e+00   1.999998000e+00   3.999998000e+00   4.3e+00  648.23
+1   1.3e+00  1.5e+00  4.0e+00  -9.49e-01  5.695139723e+00   7.136333342e+00   2.8e+00  660.83
+2   3.5e-02  4.0e-02  1.0e-01  -8.03e-01  1.225126744e+01   1.232511012e+01   7.2e-02  681.18
+3   1.7e-02  2.0e-02  5.2e-02  1.27e+01   2.596857489e+00   2.591078278e+00   3.6e-02  694.92
+4   9.6e-03  1.1e-02  2.9e-02  8.21e+00   2.047353359e+00   2.045900282e+00   2.0e-02  711.24
+5   5.3e-03  6.1e-03  1.6e-02  2.03e+00   2.026374882e+00   2.025799503e+00   1.1e-02  728.21
+6   1.1e-03  1.2e-03  3.2e-03  1.49e+00   2.014689863e+00   2.014606892e+00   2.2e-03  754.18
+7   5.8e-04  6.6e-04  1.7e-03  1.03e+00   2.013704729e+00   2.013660833e+00   1.2e-03  773.63
+8   4.3e-04  4.9e-04  1.3e-03  9.81e-01   2.013406026e+00   2.013373453e+00   8.9e-04  786.98
+9   3.2e-04  3.7e-04  9.7e-04  9.59e-01   2.013198346e+00   2.013173758e+00   6.7e-04  799.43
+10  2.2e-04  2.5e-04  6.5e-04  9.41e-01   2.012970718e+00   2.012954446e+00   4.5e-04  813.16
+11  1.5e-04  1.7e-04  4.5e-04  9.06e-01   2.012828853e+00   2.012817246e+00   3.1e-04  837.21
+12  1.1e-04  1.3e-04  3.4e-04  8.60e-01   2.012740024e+00   2.012730948e+00   2.4e-04  859.96
+13  8.9e-05  1.0e-04  2.7e-04  8.03e-01   2.012678390e+00   2.012670878e+00   1.8e-04  882.53
+14  7.6e-05  8.8e-05  2.3e-04  7.43e-01   2.012642795e+00   2.012636072e+00   1.6e-04  898.00
+15  6.5e-05  7.5e-05  1.9e-04  7.03e-01   2.012609741e+00   2.012603695e+00   1.3e-04  920.25
+16  5.3e-05  6.1e-05  1.6e-04  6.65e-01   2.012574389e+00   2.012569062e+00   1.1e-04  939.58
+17  4.5e-05  5.2e-05  1.3e-04  6.32e-01   2.012544627e+00   2.012539863e+00   9.3e-05  952.48
+18  3.8e-05  4.4e-05  1.1e-04  6.09e-01   2.012518235e+00   2.012513937e+00   7.8e-05  972.35
+19  3.3e-05  3.8e-05  9.8e-05  5.84e-01   2.012498054e+00   2.012494094e+00   6.8e-05  985.02
+20  2.9e-05  3.3e-05  8.7e-05  5.60e-01   2.012480212e+00   2.012476561e+00   6.0e-05  996.49
+Maximum amount of time 1000.00 is reached.
+Optimizer terminated. Time: 1010.40 
+
+
+Interior-point solution summary
+  Problem status  : UNKNOWN
+  Solution status : UNKNOWN
+  Primal.  obj: 2.0124802121e+00    nrm: 1e+00    Viol.  con: 3e-07    var: 3e-07  
+  Dual.    obj: 2.0124765606e+00    nrm: 1e+02    Viol.  con: 0e+00    var: 3e-07  

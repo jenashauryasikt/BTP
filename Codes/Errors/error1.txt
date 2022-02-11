@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "one_sr.py", line 140, in <module>
+    cim[i*5:i*5+240, j*5:j*5+240] = resolve_bw(image.crop((j, i, j+48, i+48)), 48)
+  File "one_sr.py", line 53, in resolve_bw
+    s.fit(l[:,0:2],l[:,2],u)
+  File "/home/ee/btech/ee1180500/Codes/LapMCM_regress.py", line 36, in fit
+    delta = GDO(W)
+  File "/home/ee/btech/ee1180500/Codes/LapMCM_regress.py", line 112, in GDO
+    delta = np.zeros((n, columns))
+numpy.core._exceptions.MemoryError: Unable to allocate 329. GiB for an array with shape (41472, 1065078) and data type float64

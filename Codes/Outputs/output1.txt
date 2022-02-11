@@ -1,0 +1,6 @@
+===============================
+2620352.pbshpc
+vsky011.hpc.iitd.ac.in
+===============================
+CREATING ENV
+START PYTHON

@@ -1,0 +1,1559 @@
+===============================
+2621321.pbshpc
+vsky005.hpc.iitd.ac.in
+===============================
+CREATING ENV
+START PYTHON
+LapMCM - Trend Filtered - Implemented in CvxPy
+Current Dataset -  image
+===============================================================================
+                                     CVXPY                                     
+                                    v1.1.17                                    
+===============================================================================
+(CVXPY) Jan 24 06:26:00 PM: Your problem has 5634 variables, 6 constraints, and 0 parameters.
+(CVXPY) Jan 24 06:26:00 PM: It is compliant with the following grammars: DCP, DQCP
+(CVXPY) Jan 24 06:26:00 PM: (If you need to solve this problem multiple times, but with different data, consider using parameters.)
+(CVXPY) Jan 24 06:26:00 PM: CVXPY will first compile your problem; then, it will invoke a numerical solver to obtain a solution.
+-------------------------------------------------------------------------------
+                                  Compilation                                  
+-------------------------------------------------------------------------------
+(CVXPY) Jan 24 06:26:00 PM: Compiling problem (target solver=MOSEK).
+(CVXPY) Jan 24 06:26:00 PM: Reduction chain: Dcp2Cone -> CvxAttr2Constr -> ConeMatrixStuffing -> MOSEK
+(CVXPY) Jan 24 06:26:00 PM: Applying reduction Dcp2Cone
+(CVXPY) Jan 24 06:26:00 PM: Applying reduction CvxAttr2Constr
+(CVXPY) Jan 24 06:26:00 PM: Applying reduction ConeMatrixStuffing
+(CVXPY) Jan 24 06:33:16 PM: Applying reduction MOSEK
+(CVXPY) Jan 24 06:39:13 PM: Finished problem compilation (took 7.935e+02 seconds).
+-------------------------------------------------------------------------------
+                                Numerical solver                               
+-------------------------------------------------------------------------------
+(CVXPY) Jan 24 06:39:14 PM: Invoking solver MOSEK  to obtain a solution.
+
+
+Problem
+  Name                   :                 
+  Objective sense        : max             
+  Type                   : LO (linear optimization problem)
+  Constraints            : 42004           
+  Cones                  : 0               
+  Scalar variables       : 75811           
+  Matrix variables       : 0               
+  Integer variables      : 0               
+
+Optimizer started.
+Problem
+  Name                   :                 
+  Objective sense        : max             
+  Type                   : LO (linear optimization problem)
+  Constraints            : 42004           
+  Cones                  : 0               
+  Scalar variables       : 75811           
+  Matrix variables       : 0               
+  Integer variables      : 0               
+
+Optimizer  - threads                : 2               
+Optimizer  - solved problem         : the dual        
+Optimizer  - Constraints            : 73250
+Optimizer  - Cones                  : 0
+Optimizer  - Scalar variables       : 111661            conic                  : 0               
+Optimizer  - Semi-definite variables: 0                 scalarized             : 0               
+Factor     - setup time             : 21.97             dense det. time        : 4.86            
+Factor     - ML order time          : 0.05              GP order time          : 0.00            
+Factor     - nonzeros before factor : 5.79e+07          after factor           : 5.79e+07        
+Factor     - dense dim.             : 1787              flops                  : 5.15e+10        
+ITE PFEAS    DFEAS    GFEAS    PRSTATUS   POBJ              DOBJ              MU       TIME  
+0   2.1e+00  2.4e+00  6.2e+00  0.00e+00   1.999998000e+00   3.999998000e+00   4.3e+00  688.33
+1   1.3e+00  1.5e+00  4.0e+00  -9.49e-01  5.695139723e+00   7.136333342e+00   2.8e+00  700.64
+2   3.5e-02  4.0e-02  1.0e-01  -8.03e-01  1.225126744e+01   1.232511012e+01   7.2e-02  712.16
+3   1.7e-02  2.0e-02  5.2e-02  1.27e+01   2.596857489e+00   2.591078278e+00   3.6e-02  723.84
+4   9.6e-03  1.1e-02  2.9e-02  8.21e+00   2.047353359e+00   2.045900282e+00   2.0e-02  736.43
+5   5.3e-03  6.1e-03  1.6e-02  2.03e+00   2.026374882e+00   2.025799503e+00   1.1e-02  748.16
+6   1.1e-03  1.2e-03  3.2e-03  1.49e+00   2.014689863e+00   2.014606892e+00   2.2e-03  760.66
+7   5.8e-04  6.6e-04  1.7e-03  1.03e+00   2.013704729e+00   2.013660833e+00   1.2e-03  772.87
+8   4.3e-04  4.9e-04  1.3e-03  9.81e-01   2.013406026e+00   2.013373453e+00   8.9e-04  784.29
+9   3.2e-04  3.7e-04  9.7e-04  9.59e-01   2.013198346e+00   2.013173758e+00   6.7e-04  795.56
+10  2.2e-04  2.5e-04  6.5e-04  9.41e-01   2.012970718e+00   2.012954446e+00   4.5e-04  807.97
+11  1.5e-04  1.7e-04  4.5e-04  9.06e-01   2.012828853e+00   2.012817246e+00   3.1e-04  820.11
+12  1.1e-04  1.3e-04  3.4e-04  8.60e-01   2.012740024e+00   2.012730948e+00   2.4e-04  831.78
+13  8.9e-05  1.0e-04  2.7e-04  8.03e-01   2.012678390e+00   2.012670878e+00   1.8e-04  843.80
+14  7.6e-05  8.8e-05  2.3e-04  7.43e-01   2.012642795e+00   2.012636072e+00   1.6e-04  855.33
+15  6.5e-05  7.5e-05  1.9e-04  7.03e-01   2.012609741e+00   2.012603695e+00   1.3e-04  866.80
+16  5.3e-05  6.1e-05  1.6e-04  6.65e-01   2.012574389e+00   2.012569062e+00   1.1e-04  879.00
+17  4.5e-05  5.2e-05  1.3e-04  6.32e-01   2.012544627e+00   2.012539863e+00   9.3e-05  890.65
+18  3.8e-05  4.4e-05  1.1e-04  6.09e-01   2.012518235e+00   2.012513937e+00   7.8e-05  902.13
+19  3.3e-05  3.8e-05  9.8e-05  5.84e-01   2.012498054e+00   2.012494094e+00   6.8e-05  914.27
+20  2.9e-05  3.3e-05  8.7e-05  5.60e-01   2.012480212e+00   2.012476561e+00   6.0e-05  925.52
+21  2.4e-05  2.8e-05  7.4e-05  5.62e-01   2.012458529e+00   2.012455259e+00   5.1e-05  937.95
+22  2.2e-05  2.5e-05  6.5e-05  5.60e-01   2.012443501e+00   2.012440488e+00   4.5e-05  949.75
+23  1.8e-05  2.0e-05  5.4e-05  5.54e-01   2.012421256e+00   2.012418566e+00   3.7e-05  961.44
+24  1.6e-05  1.8e-05  4.8e-05  5.01e-01   2.012409419e+00   2.012406870e+00   3.3e-05  972.77
+25  1.4e-05  1.7e-05  4.3e-05  4.90e-01   2.012396425e+00   2.012394009e+00   3.0e-05  984.50
+26  9.6e-06  9.4e-05  2.9e-05  7.48e-01   2.012362514e+00   2.012360907e+00   2.0e-05  1051.42
+Maximum amount of time 1000.00 is reached.
+Optimizer terminated. Time: 1063.02 
+
+
+Interior-point solution summary
+  Problem status  : UNKNOWN
+  Solution status : UNKNOWN
+  Primal.  obj: 2.0123625137e+00    nrm: 1e+00    Viol.  con: 1e-07    var: 1e-07  
+  Dual.    obj: 2.0123609073e+00    nrm: 1e+02    Viol.  con: 0e+00    var: 1e-06  
+Unexpected MOSEK error
+===============================================================================
+                                     CVXPY                                     
+                                    v1.1.17                                    
+===============================================================================
+(CVXPY) Jan 24 07:01:22 PM: Your problem has 5634 variables, 6 constraints, and 0 parameters.
+(CVXPY) Jan 24 07:01:22 PM: It is compliant with the following grammars: DCP, DQCP
+(CVXPY) Jan 24 07:01:22 PM: (If you need to solve this problem multiple times, but with different data, consider using parameters.)
+(CVXPY) Jan 24 07:01:22 PM: CVXPY will first compile your problem; then, it will invoke a numerical solver to obtain a solution.
+-------------------------------------------------------------------------------
+                                  Compilation                                  
+-------------------------------------------------------------------------------
+(CVXPY) Jan 24 07:01:22 PM: Compiling problem (target solver=MOSEK).
+(CVXPY) Jan 24 07:01:22 PM: Reduction chain: Dcp2Cone -> CvxAttr2Constr -> ConeMatrixStuffing -> MOSEK
+(CVXPY) Jan 24 07:01:22 PM: Applying reduction Dcp2Cone
+(CVXPY) Jan 24 07:01:22 PM: Applying reduction CvxAttr2Constr
+(CVXPY) Jan 24 07:01:22 PM: Applying reduction ConeMatrixStuffing
+(CVXPY) Jan 24 07:08:34 PM: Applying reduction MOSEK
+(CVXPY) Jan 24 07:14:20 PM: Finished problem compilation (took 7.776e+02 seconds).
+-------------------------------------------------------------------------------
+                                Numerical solver                               
+-------------------------------------------------------------------------------
+(CVXPY) Jan 24 07:14:20 PM: Invoking solver MOSEK  to obtain a solution.
+
+
+Problem
+  Name                   :                 
+  Objective sense        : max             
+  Type                   : LO (linear optimization problem)
+  Constraints            : 42004           
+  Cones                  : 0               
+  Scalar variables       : 75811           
+  Matrix variables       : 0               
+  Integer variables      : 0               
+
+Optimizer started.
+Problem
+  Name                   :                 
+  Objective sense        : max             
+  Type                   : LO (linear optimization problem)
+  Constraints            : 42004           
+  Cones                  : 0               
+  Scalar variables       : 75811           
+  Matrix variables       : 0               
+  Integer variables      : 0               
+
+Optimizer  - threads                : 2               
+Optimizer  - solved problem         : the dual        
+Optimizer  - Constraints            : 73250
+Optimizer  - Cones                  : 0
+Optimizer  - Scalar variables       : 111661            conic                  : 0               
+Optimizer  - Semi-definite variables: 0                 scalarized             : 0               
+Factor     - setup time             : 22.95             dense det. time        : 4.73            
+Factor     - ML order time          : 0.02              GP order time          : 0.00            
+Factor     - nonzeros before factor : 5.79e+07          after factor           : 5.79e+07        
+Factor     - dense dim.             : 1787              flops                  : 5.15e+10        
+ITE PFEAS    DFEAS    GFEAS    PRSTATUS   POBJ              DOBJ              MU       TIME  
+0   2.1e+00  2.4e+00  6.2e+00  0.00e+00   1.999998000e+00   3.999998000e+00   4.3e+00  687.12
+1   1.3e+00  1.5e+00  4.0e+00  -9.49e-01  5.695139723e+00   7.136333342e+00   2.8e+00  699.53
+2   3.5e-02  4.0e-02  1.0e-01  -8.03e-01  1.225126744e+01   1.232511012e+01   7.2e-02  711.16
+3   1.7e-02  2.0e-02  5.2e-02  1.27e+01   2.596857489e+00   2.591078278e+00   3.6e-02  722.71
+4   9.6e-03  1.1e-02  2.9e-02  8.21e+00   2.047353359e+00   2.045900282e+00   2.0e-02  735.47
+5   5.3e-03  6.1e-03  1.6e-02  2.03e+00   2.026374882e+00   2.025799503e+00   1.1e-02  747.03
+6   1.1e-03  1.2e-03  3.2e-03  1.49e+00   2.014689863e+00   2.014606892e+00   2.2e-03  759.68
+7   5.8e-04  6.6e-04  1.7e-03  1.03e+00   2.013704729e+00   2.013660833e+00   1.2e-03  771.63
+8   4.3e-04  4.9e-04  1.3e-03  9.81e-01   2.013406026e+00   2.013373453e+00   8.9e-04  782.77
+9   3.2e-04  3.7e-04  9.7e-04  9.59e-01   2.013198346e+00   2.013173758e+00   6.7e-04  794.29
+10  2.2e-04  2.5e-04  6.5e-04  9.41e-01   2.012970718e+00   2.012954446e+00   4.5e-04  806.30
+11  1.5e-04  1.7e-04  4.5e-04  9.06e-01   2.012828853e+00   2.012817246e+00   3.1e-04  818.43
+12  1.1e-04  1.3e-04  3.4e-04  8.60e-01   2.012740024e+00   2.012730948e+00   2.4e-04  830.31
+13  8.9e-05  1.0e-04  2.7e-04  8.03e-01   2.012678390e+00   2.012670878e+00   1.8e-04  842.00
+14  7.6e-05  8.8e-05  2.3e-04  7.43e-01   2.012642795e+00   2.012636072e+00   1.6e-04  853.60
+15  6.5e-05  7.5e-05  1.9e-04  7.03e-01   2.012609741e+00   2.012603695e+00   1.3e-04  865.03
+16  5.3e-05  6.1e-05  1.6e-04  6.65e-01   2.012574389e+00   2.012569062e+00   1.1e-04  876.93
+17  4.5e-05  5.2e-05  1.3e-04  6.32e-01   2.012544627e+00   2.012539863e+00   9.3e-05  888.84
+18  3.8e-05  4.4e-05  1.1e-04  6.09e-01   2.012518235e+00   2.012513937e+00   7.8e-05  900.19
+19  3.3e-05  3.8e-05  9.8e-05  5.84e-01   2.012498054e+00   2.012494094e+00   6.8e-05  912.08
+20  2.9e-05  3.3e-05  8.7e-05  5.60e-01   2.012480212e+00   2.012476561e+00   6.0e-05  923.32
+21  2.4e-05  2.8e-05  7.4e-05  5.62e-01   2.012458529e+00   2.012455259e+00   5.1e-05  935.52
+22  2.2e-05  2.5e-05  6.5e-05  5.60e-01   2.012443501e+00   2.012440488e+00   4.5e-05  947.29
+23  1.8e-05  2.0e-05  5.4e-05  5.54e-01   2.012421256e+00   2.012418566e+00   3.7e-05  958.86
+24  1.6e-05  1.8e-05  4.8e-05  5.01e-01   2.012409419e+00   2.012406870e+00   3.3e-05  970.14
+25  1.4e-05  1.7e-05  4.3e-05  4.90e-01   2.012396425e+00   2.012394009e+00   3.0e-05  981.76
+26  9.6e-06  9.4e-05  2.9e-05  7.48e-01   2.012362514e+00   2.012360907e+00   2.0e-05  1048.25
+Maximum amount of time 1000.00 is reached.
+Optimizer terminated. Time: 1067.74 
+
+
+Interior-point solution summary
+  Problem status  : UNKNOWN
+  Solution status : UNKNOWN
+  Primal.  obj: 2.0123625137e+00    nrm: 1e+00    Viol.  con: 1e-07    var: 1e-07  
+  Dual.    obj: 2.0123609073e+00    nrm: 1e+02    Viol.  con: 0e+00    var: 1e-06  
+Unexpected MOSEK error
+===============================================================================
+                                     CVXPY                                     
+                                    v1.1.17                                    
+===============================================================================
+(CVXPY) Jan 24 07:37:05 PM: Your problem has 5634 variables, 6 constraints, and 0 parameters.
+(CVXPY) Jan 24 07:37:05 PM: It is compliant with the following grammars: DCP, DQCP
+(CVXPY) Jan 24 07:37:05 PM: (If you need to solve this problem multiple times, but with different data, consider using parameters.)
+(CVXPY) Jan 24 07:37:05 PM: CVXPY will first compile your problem; then, it will invoke a numerical solver to obtain a solution.
+-------------------------------------------------------------------------------
+                                  Compilation                                  
+-------------------------------------------------------------------------------
+(CVXPY) Jan 24 07:37:05 PM: Compiling problem (target solver=MOSEK).
+(CVXPY) Jan 24 07:37:05 PM: Reduction chain: Dcp2Cone -> CvxAttr2Constr -> ConeMatrixStuffing -> MOSEK
+(CVXPY) Jan 24 07:37:05 PM: Applying reduction Dcp2Cone
+(CVXPY) Jan 24 07:37:05 PM: Applying reduction CvxAttr2Constr
+(CVXPY) Jan 24 07:37:05 PM: Applying reduction ConeMatrixStuffing
+(CVXPY) Jan 24 07:44:54 PM: Applying reduction MOSEK
+(CVXPY) Jan 24 07:50:49 PM: Finished problem compilation (took 8.244e+02 seconds).
+-------------------------------------------------------------------------------
+                                Numerical solver                               
+-------------------------------------------------------------------------------
+(CVXPY) Jan 24 07:50:49 PM: Invoking solver MOSEK  to obtain a solution.
+
+
+Problem
+  Name                   :                 
+  Objective sense        : max             
+  Type                   : LO (linear optimization problem)
+  Constraints            : 42004           
+  Cones                  : 0               
+  Scalar variables       : 75811           
+  Matrix variables       : 0               
+  Integer variables      : 0               
+
+Optimizer started.
+Problem
+  Name                   :                 
+  Objective sense        : max             
+  Type                   : LO (linear optimization problem)
+  Constraints            : 42004           
+  Cones                  : 0               
+  Scalar variables       : 75811           
+  Matrix variables       : 0               
+  Integer variables      : 0               
+
+Optimizer  - threads                : 2               
+Optimizer  - solved problem         : the dual        
+Optimizer  - Constraints            : 73250
+Optimizer  - Cones                  : 0
+Optimizer  - Scalar variables       : 111661            conic                  : 0               
+Optimizer  - Semi-definite variables: 0                 scalarized             : 0               
+Factor     - setup time             : 21.47             dense det. time        : 4.83            
+Factor     - ML order time          : 0.02              GP order time          : 0.00            
+Factor     - nonzeros before factor : 5.79e+07          after factor           : 5.79e+07        
+Factor     - dense dim.             : 1787              flops                  : 5.15e+10        
+ITE PFEAS    DFEAS    GFEAS    PRSTATUS   POBJ              DOBJ              MU       TIME  
+0   2.1e+00  2.4e+00  6.2e+00  0.00e+00   1.999998000e+00   3.999998000e+00   4.3e+00  682.81
+1   1.3e+00  1.5e+00  4.0e+00  -9.49e-01  5.695139723e+00   7.136333342e+00   2.8e+00  694.63
+2   3.5e-02  4.0e-02  1.0e-01  -8.03e-01  1.225126744e+01   1.232511012e+01   7.2e-02  706.29
+3   1.7e-02  2.0e-02  5.2e-02  1.27e+01   2.596857489e+00   2.591078278e+00   3.6e-02  717.70
+4   9.6e-03  1.1e-02  2.9e-02  8.21e+00   2.047353359e+00   2.045900282e+00   2.0e-02  730.21
+5   5.3e-03  6.1e-03  1.6e-02  2.03e+00   2.026374882e+00   2.025799503e+00   1.1e-02  742.16
+6   1.1e-03  1.2e-03  3.2e-03  1.49e+00   2.014689863e+00   2.014606892e+00   2.2e-03  754.65
+7   5.8e-04  6.6e-04  1.7e-03  1.03e+00   2.013704729e+00   2.013660833e+00   1.2e-03  766.78
+8   4.3e-04  4.9e-04  1.3e-03  9.81e-01   2.013406026e+00   2.013373453e+00   8.9e-04  778.29
+9   3.2e-04  3.7e-04  9.7e-04  9.59e-01   2.013198346e+00   2.013173758e+00   6.7e-04  789.56
+10  2.2e-04  2.5e-04  6.5e-04  9.41e-01   2.012970718e+00   2.012954446e+00   4.5e-04  801.95
+11  1.5e-04  1.7e-04  4.5e-04  9.06e-01   2.012828853e+00   2.012817246e+00   3.1e-04  814.15
+12  1.1e-04  1.3e-04  3.4e-04  8.60e-01   2.012740024e+00   2.012730948e+00   2.4e-04  825.74
+13  8.9e-05  1.0e-04  2.7e-04  8.03e-01   2.012678390e+00   2.012670878e+00   1.8e-04  837.65
+14  7.6e-05  8.8e-05  2.3e-04  7.43e-01   2.012642795e+00   2.012636072e+00   1.6e-04  849.14
+15  6.5e-05  7.5e-05  1.9e-04  7.03e-01   2.012609741e+00   2.012603695e+00   1.3e-04  860.67
+16  5.3e-05  6.1e-05  1.6e-04  6.65e-01   2.012574389e+00   2.012569062e+00   1.1e-04  872.84
+17  4.5e-05  5.2e-05  1.3e-04  6.32e-01   2.012544627e+00   2.012539863e+00   9.3e-05  884.47
+18  3.8e-05  4.4e-05  1.1e-04  6.09e-01   2.012518235e+00   2.012513937e+00   7.8e-05  896.06
+19  3.3e-05  3.8e-05  9.8e-05  5.84e-01   2.012498054e+00   2.012494094e+00   6.8e-05  908.24
+20  2.9e-05  3.3e-05  8.7e-05  5.60e-01   2.012480212e+00   2.012476561e+00   6.0e-05  919.43
+21  2.4e-05  2.8e-05  7.4e-05  5.62e-01   2.012458529e+00   2.012455259e+00   5.1e-05  931.82
+22  2.2e-05  2.5e-05  6.5e-05  5.60e-01   2.012443501e+00   2.012440488e+00   4.5e-05  943.42
+23  1.8e-05  2.0e-05  5.4e-05  5.54e-01   2.012421256e+00   2.012418566e+00   3.7e-05  955.05
+24  1.6e-05  1.8e-05  4.8e-05  5.01e-01   2.012409419e+00   2.012406870e+00   3.3e-05  966.56
+25  1.4e-05  1.7e-05  4.3e-05  4.90e-01   2.012396425e+00   2.012394009e+00   3.0e-05  978.13
+26  9.6e-06  9.4e-05  2.9e-05  7.48e-01   2.012362514e+00   2.012360907e+00   2.0e-05  1044.73
+Maximum amount of time 1000.00 is reached.
+Optimizer terminated. Time: 1056.82 
+
+
+Interior-point solution summary
+  Problem status  : UNKNOWN
+  Solution status : UNKNOWN
+  Primal.  obj: 2.0123625137e+00    nrm: 1e+00    Viol.  con: 1e-07    var: 1e-07  
+  Dual.    obj: 2.0123609073e+00    nrm: 1e+02    Viol.  con: 0e+00    var: 1e-06  
+Unexpected MOSEK error
+===============================================================================
+                                     CVXPY                                     
+                                    v1.1.17                                    
+===============================================================================
+(CVXPY) Jan 24 08:12:43 PM: Your problem has 5634 variables, 6 constraints, and 0 parameters.
+(CVXPY) Jan 24 08:12:44 PM: It is compliant with the following grammars: DCP, DQCP
+(CVXPY) Jan 24 08:12:44 PM: (If you need to solve this problem multiple times, but with different data, consider using parameters.)
+(CVXPY) Jan 24 08:12:44 PM: CVXPY will first compile your problem; then, it will invoke a numerical solver to obtain a solution.
+-------------------------------------------------------------------------------
+                                  Compilation                                  
+-------------------------------------------------------------------------------
+(CVXPY) Jan 24 08:12:44 PM: Compiling problem (target solver=MOSEK).
+(CVXPY) Jan 24 08:12:44 PM: Reduction chain: Dcp2Cone -> CvxAttr2Constr -> ConeMatrixStuffing -> MOSEK
+(CVXPY) Jan 24 08:12:44 PM: Applying reduction Dcp2Cone
+(CVXPY) Jan 24 08:12:44 PM: Applying reduction CvxAttr2Constr
+(CVXPY) Jan 24 08:12:44 PM: Applying reduction ConeMatrixStuffing
+(CVXPY) Jan 24 08:20:00 PM: Applying reduction MOSEK
+(CVXPY) Jan 24 08:25:57 PM: Finished problem compilation (took 7.936e+02 seconds).
+-------------------------------------------------------------------------------
+                                Numerical solver                               
+-------------------------------------------------------------------------------
+(CVXPY) Jan 24 08:25:57 PM: Invoking solver MOSEK  to obtain a solution.
+
+
+Problem
+  Name                   :                 
+  Objective sense        : max             
+  Type                   : LO (linear optimization problem)
+  Constraints            : 42004           
+  Cones                  : 0               
+  Scalar variables       : 75811           
+  Matrix variables       : 0               
+  Integer variables      : 0               
+
+Optimizer started.
+Problem
+  Name                   :                 
+  Objective sense        : max             
+  Type                   : LO (linear optimization problem)
+  Constraints            : 42004           
+  Cones                  : 0               
+  Scalar variables       : 75811           
+  Matrix variables       : 0               
+  Integer variables      : 0               
+
+Optimizer  - threads                : 2               
+Optimizer  - solved problem         : the dual        
+Optimizer  - Constraints            : 73250
+Optimizer  - Cones                  : 0
+Optimizer  - Scalar variables       : 111661            conic                  : 0               
+Optimizer  - Semi-definite variables: 0                 scalarized             : 0               
+Factor     - setup time             : 22.33             dense det. time        : 4.80            
+Factor     - ML order time          : 0.04              GP order time          : 0.00            
+Factor     - nonzeros before factor : 5.79e+07          after factor           : 5.79e+07        
+Factor     - dense dim.             : 1787              flops                  : 5.15e+10        
+ITE PFEAS    DFEAS    GFEAS    PRSTATUS   POBJ              DOBJ              MU       TIME  
+0   2.1e+00  2.4e+00  6.2e+00  0.00e+00   1.999998000e+00   3.999998000e+00   4.3e+00  691.67
+1   1.3e+00  1.5e+00  4.0e+00  -9.49e-01  5.695139723e+00   7.136333342e+00   2.8e+00  704.07
+2   3.5e-02  4.0e-02  1.0e-01  -8.03e-01  1.225126744e+01   1.232511012e+01   7.2e-02  715.64
+3   1.7e-02  2.0e-02  5.2e-02  1.27e+01   2.596857489e+00   2.591078278e+00   3.6e-02  727.34
+4   9.6e-03  1.1e-02  2.9e-02  8.21e+00   2.047353359e+00   2.045900282e+00   2.0e-02  739.60
+5   5.3e-03  6.1e-03  1.6e-02  2.03e+00   2.026374882e+00   2.025799503e+00   1.1e-02  751.48
+6   1.1e-03  1.2e-03  3.2e-03  1.49e+00   2.014689863e+00   2.014606892e+00   2.2e-03  764.04
+7   5.8e-04  6.6e-04  1.7e-03  1.03e+00   2.013704729e+00   2.013660833e+00   1.2e-03  775.94
+8   4.3e-04  4.9e-04  1.3e-03  9.81e-01   2.013406026e+00   2.013373453e+00   8.9e-04  787.61
+9   3.2e-04  3.7e-04  9.7e-04  9.59e-01   2.013198346e+00   2.013173758e+00   6.7e-04  798.85
+10  2.2e-04  2.5e-04  6.5e-04  9.41e-01   2.012970718e+00   2.012954446e+00   4.5e-04  811.05
+11  1.5e-04  1.7e-04  4.5e-04  9.06e-01   2.012828853e+00   2.012817246e+00   3.1e-04  823.35
+12  1.1e-04  1.3e-04  3.4e-04  8.60e-01   2.012740024e+00   2.012730948e+00   2.4e-04  835.07
+13  8.9e-05  1.0e-04  2.7e-04  8.03e-01   2.012678390e+00   2.012670878e+00   1.8e-04  846.92
+14  7.6e-05  8.8e-05  2.3e-04  7.43e-01   2.012642795e+00   2.012636072e+00   1.6e-04  858.43
+15  6.5e-05  7.5e-05  1.9e-04  7.03e-01   2.012609741e+00   2.012603695e+00   1.3e-04  870.01
+16  5.3e-05  6.1e-05  1.6e-04  6.65e-01   2.012574389e+00   2.012569062e+00   1.1e-04  882.15
+17  4.5e-05  5.2e-05  1.3e-04  6.32e-01   2.012544627e+00   2.012539863e+00   9.3e-05  893.73
+18  3.8e-05  4.4e-05  1.1e-04  6.09e-01   2.012518235e+00   2.012513937e+00   7.8e-05  905.23
+19  3.3e-05  3.8e-05  9.8e-05  5.84e-01   2.012498054e+00   2.012494094e+00   6.8e-05  917.25
+20  2.9e-05  3.3e-05  8.7e-05  5.60e-01   2.012480212e+00   2.012476561e+00   6.0e-05  928.42
+21  2.4e-05  2.8e-05  7.4e-05  5.62e-01   2.012458529e+00   2.012455259e+00   5.1e-05  940.98
+22  2.2e-05  2.5e-05  6.5e-05  5.60e-01   2.012443501e+00   2.012440488e+00   4.5e-05  952.35
+23  1.8e-05  2.0e-05  5.4e-05  5.54e-01   2.012421256e+00   2.012418566e+00   3.7e-05  964.06
+24  1.6e-05  1.8e-05  4.8e-05  5.01e-01   2.012409419e+00   2.012406870e+00   3.3e-05  975.71
+25  1.4e-05  1.7e-05  4.3e-05  4.90e-01   2.012396425e+00   2.012394009e+00   3.0e-05  987.09
+Maximum amount of time 1000.00 is reached.
+Optimizer terminated. Time: 1008.80 
+
+
+Interior-point solution summary
+  Problem status  : UNKNOWN
+  Solution status : UNKNOWN
+  Primal.  obj: 2.0123964250e+00    nrm: 1e+00    Viol.  con: 2e-07    var: 2e-07  
+  Dual.    obj: 2.0123940088e+00    nrm: 1e+02    Viol.  con: 0e+00    var: 2e-07  
+Unexpected MOSEK error
+===============================================================================
+                                     CVXPY                                     
+                                    v1.1.17                                    
+===============================================================================
+(CVXPY) Jan 24 08:46:51 PM: Your problem has 5634 variables, 6 constraints, and 0 parameters.
+(CVXPY) Jan 24 08:46:51 PM: It is compliant with the following grammars: DCP, DQCP
+(CVXPY) Jan 24 08:46:51 PM: (If you need to solve this problem multiple times, but with different data, consider using parameters.)
+(CVXPY) Jan 24 08:46:51 PM: CVXPY will first compile your problem; then, it will invoke a numerical solver to obtain a solution.
+-------------------------------------------------------------------------------
+                                  Compilation                                  
+-------------------------------------------------------------------------------
+(CVXPY) Jan 24 08:46:51 PM: Compiling problem (target solver=MOSEK).
+(CVXPY) Jan 24 08:46:51 PM: Reduction chain: Dcp2Cone -> CvxAttr2Constr -> ConeMatrixStuffing -> MOSEK
+(CVXPY) Jan 24 08:46:51 PM: Applying reduction Dcp2Cone
+(CVXPY) Jan 24 08:46:51 PM: Applying reduction CvxAttr2Constr
+(CVXPY) Jan 24 08:46:51 PM: Applying reduction ConeMatrixStuffing
+(CVXPY) Jan 24 08:54:35 PM: Applying reduction MOSEK
+(CVXPY) Jan 24 09:00:34 PM: Finished problem compilation (took 8.230e+02 seconds).
+-------------------------------------------------------------------------------
+                                Numerical solver                               
+-------------------------------------------------------------------------------
+(CVXPY) Jan 24 09:00:34 PM: Invoking solver MOSEK  to obtain a solution.
+
+
+Problem
+  Name                   :                 
+  Objective sense        : max             
+  Type                   : LO (linear optimization problem)
+  Constraints            : 42004           
+  Cones                  : 0               
+  Scalar variables       : 75811           
+  Matrix variables       : 0               
+  Integer variables      : 0               
+
+Optimizer started.
+Problem
+  Name                   :                 
+  Objective sense        : max             
+  Type                   : LO (linear optimization problem)
+  Constraints            : 42004           
+  Cones                  : 0               
+  Scalar variables       : 75811           
+  Matrix variables       : 0               
+  Integer variables      : 0               
+
+Optimizer  - threads                : 2               
+Optimizer  - solved problem         : the dual        
+Optimizer  - Constraints            : 73250
+Optimizer  - Cones                  : 0
+Optimizer  - Scalar variables       : 111661            conic                  : 0               
+Optimizer  - Semi-definite variables: 0                 scalarized             : 0               
+Factor     - setup time             : 20.96             dense det. time        : 4.47            
+Factor     - ML order time          : 0.02              GP order time          : 0.00            
+Factor     - nonzeros before factor : 5.79e+07          after factor           : 5.79e+07        
+Factor     - dense dim.             : 1787              flops                  : 5.15e+10        
+ITE PFEAS    DFEAS    GFEAS    PRSTATUS   POBJ              DOBJ              MU       TIME  
+0   2.1e+00  2.4e+00  6.2e+00  0.00e+00   1.999998000e+00   3.999998000e+00   4.3e+00  682.96
+1   1.3e+00  1.5e+00  4.0e+00  -9.49e-01  5.695139723e+00   7.136333342e+00   2.8e+00  694.75
+2   3.5e-02  4.0e-02  1.0e-01  -8.03e-01  1.225126744e+01   1.232511012e+01   7.2e-02  706.63
+3   1.7e-02  2.0e-02  5.2e-02  1.27e+01   2.596857489e+00   2.591078278e+00   3.6e-02  718.01
+4   9.6e-03  1.1e-02  2.9e-02  8.21e+00   2.047353359e+00   2.045900282e+00   2.0e-02  730.61
+5   5.3e-03  6.1e-03  1.6e-02  2.03e+00   2.026374882e+00   2.025799503e+00   1.1e-02  742.63
+6   1.1e-03  1.2e-03  3.2e-03  1.49e+00   2.014689863e+00   2.014606892e+00   2.2e-03  755.26
+7   5.8e-04  6.6e-04  1.7e-03  1.03e+00   2.013704729e+00   2.013660833e+00   1.2e-03  767.43
+8   4.3e-04  4.9e-04  1.3e-03  9.81e-01   2.013406026e+00   2.013373453e+00   8.9e-04  778.97
+9   3.2e-04  3.7e-04  9.7e-04  9.59e-01   2.013198346e+00   2.013173758e+00   6.7e-04  790.36
+10  2.2e-04  2.5e-04  6.5e-04  9.41e-01   2.012970718e+00   2.012954446e+00   4.5e-04  802.77
+11  1.5e-04  1.7e-04  4.5e-04  9.06e-01   2.012828853e+00   2.012817246e+00   3.1e-04  815.16
+12  1.1e-04  1.3e-04  3.4e-04  8.60e-01   2.012740024e+00   2.012730948e+00   2.4e-04  826.94
+13  8.9e-05  1.0e-04  2.7e-04  8.03e-01   2.012678390e+00   2.012670878e+00   1.8e-04  838.88
+14  7.6e-05  8.8e-05  2.3e-04  7.43e-01   2.012642795e+00   2.012636072e+00   1.6e-04  850.52
+15  6.5e-05  7.5e-05  1.9e-04  7.03e-01   2.012609741e+00   2.012603695e+00   1.3e-04  862.24
+16  5.3e-05  6.1e-05  1.6e-04  6.65e-01   2.012574389e+00   2.012569062e+00   1.1e-04  874.58
+17  4.5e-05  5.2e-05  1.3e-04  6.32e-01   2.012544627e+00   2.012539863e+00   9.3e-05  886.39
+18  3.8e-05  4.4e-05  1.1e-04  6.09e-01   2.012518235e+00   2.012513937e+00   7.8e-05  898.16
+19  3.3e-05  3.8e-05  9.8e-05  5.84e-01   2.012498054e+00   2.012494094e+00   6.8e-05  910.55
+20  2.9e-05  3.3e-05  8.7e-05  5.60e-01   2.012480212e+00   2.012476561e+00   6.0e-05  921.84
+21  2.4e-05  2.8e-05  7.4e-05  5.62e-01   2.012458529e+00   2.012455259e+00   5.1e-05  934.45
+22  2.2e-05  2.5e-05  6.5e-05  5.60e-01   2.012443501e+00   2.012440488e+00   4.5e-05  946.41
+23  1.8e-05  2.0e-05  5.4e-05  5.54e-01   2.012421256e+00   2.012418566e+00   3.7e-05  958.22
+24  1.6e-05  1.8e-05  4.8e-05  5.01e-01   2.012409419e+00   2.012406870e+00   3.3e-05  969.92
+25  1.4e-05  1.7e-05  4.3e-05  4.90e-01   2.012396425e+00   2.012394009e+00   3.0e-05  981.81
+26  9.6e-06  9.4e-05  2.9e-05  7.48e-01   2.012362514e+00   2.012360907e+00   2.0e-05  1049.95
+Maximum amount of time 1000.00 is reached.
+Optimizer terminated. Time: 1062.02 
+
+
+Interior-point solution summary
+  Problem status  : UNKNOWN
+  Solution status : UNKNOWN
+  Primal.  obj: 2.0123625137e+00    nrm: 1e+00    Viol.  con: 1e-07    var: 1e-07  
+  Dual.    obj: 2.0123609073e+00    nrm: 1e+02    Viol.  con: 0e+00    var: 1e-06  
+Unexpected MOSEK error
+===============================================================================
+                                     CVXPY                                     
+                                    v1.1.17                                    
+===============================================================================
+(CVXPY) Jan 24 09:22:30 PM: Your problem has 5634 variables, 6 constraints, and 0 parameters.
+(CVXPY) Jan 24 09:22:30 PM: It is compliant with the following grammars: DCP, DQCP
+(CVXPY) Jan 24 09:22:30 PM: (If you need to solve this problem multiple times, but with different data, consider using parameters.)
+(CVXPY) Jan 24 09:22:30 PM: CVXPY will first compile your problem; then, it will invoke a numerical solver to obtain a solution.
+-------------------------------------------------------------------------------
+                                  Compilation                                  
+-------------------------------------------------------------------------------
+(CVXPY) Jan 24 09:22:30 PM: Compiling problem (target solver=MOSEK).
+(CVXPY) Jan 24 09:22:30 PM: Reduction chain: Dcp2Cone -> CvxAttr2Constr -> ConeMatrixStuffing -> MOSEK
+(CVXPY) Jan 24 09:22:30 PM: Applying reduction Dcp2Cone
+(CVXPY) Jan 24 09:22:30 PM: Applying reduction CvxAttr2Constr
+(CVXPY) Jan 24 09:22:30 PM: Applying reduction ConeMatrixStuffing
+(CVXPY) Jan 24 09:29:50 PM: Applying reduction MOSEK
+(CVXPY) Jan 24 09:35:51 PM: Finished problem compilation (took 8.008e+02 seconds).
+-------------------------------------------------------------------------------
+                                Numerical solver                               
+-------------------------------------------------------------------------------
+(CVXPY) Jan 24 09:35:51 PM: Invoking solver MOSEK  to obtain a solution.
+
+
+Problem
+  Name                   :                 
+  Objective sense        : max             
+  Type                   : LO (linear optimization problem)
+  Constraints            : 42004           
+  Cones                  : 0               
+  Scalar variables       : 75811           
+  Matrix variables       : 0               
+  Integer variables      : 0               
+
+Optimizer started.
+Problem
+  Name                   :                 
+  Objective sense        : max             
+  Type                   : LO (linear optimization problem)
+  Constraints            : 42004           
+  Cones                  : 0               
+  Scalar variables       : 75811           
+  Matrix variables       : 0               
+  Integer variables      : 0               
+
+Optimizer  - threads                : 2               
+Optimizer  - solved problem         : the dual        
+Optimizer  - Constraints            : 73250
+Optimizer  - Cones                  : 0
+Optimizer  - Scalar variables       : 111661            conic                  : 0               
+Optimizer  - Semi-definite variables: 0                 scalarized             : 0               
+Factor     - setup time             : 22.44             dense det. time        : 4.89            
+Factor     - ML order time          : 0.02              GP order time          : 0.00            
+Factor     - nonzeros before factor : 5.79e+07          after factor           : 5.79e+07        
+Factor     - dense dim.             : 1787              flops                  : 5.15e+10        
+ITE PFEAS    DFEAS    GFEAS    PRSTATUS   POBJ              DOBJ              MU       TIME  
+0   2.1e+00  2.4e+00  6.2e+00  0.00e+00   1.999998000e+00   3.999998000e+00   4.3e+00  690.42
+1   1.3e+00  1.5e+00  4.0e+00  -9.49e-01  5.695139723e+00   7.136333342e+00   2.8e+00  702.68
+2   3.5e-02  4.0e-02  1.0e-01  -8.03e-01  1.225126744e+01   1.232511012e+01   7.2e-02  714.38
+3   1.7e-02  2.0e-02  5.2e-02  1.27e+01   2.596857489e+00   2.591078278e+00   3.6e-02  725.79
+4   9.6e-03  1.1e-02  2.9e-02  8.21e+00   2.047353359e+00   2.045900282e+00   2.0e-02  738.19
+5   5.3e-03  6.1e-03  1.6e-02  2.03e+00   2.026374882e+00   2.025799503e+00   1.1e-02  750.06
+6   1.1e-03  1.2e-03  3.2e-03  1.49e+00   2.014689863e+00   2.014606892e+00   2.2e-03  762.53
+7   5.8e-04  6.6e-04  1.7e-03  1.03e+00   2.013704729e+00   2.013660833e+00   1.2e-03  774.62
+8   4.3e-04  4.9e-04  1.3e-03  9.81e-01   2.013406026e+00   2.013373453e+00   8.9e-04  786.00
+9   3.2e-04  3.7e-04  9.7e-04  9.59e-01   2.013198346e+00   2.013173758e+00   6.7e-04  797.20
+10  2.2e-04  2.5e-04  6.5e-04  9.41e-01   2.012970718e+00   2.012954446e+00   4.5e-04  809.59
+11  1.5e-04  1.7e-04  4.5e-04  9.06e-01   2.012828853e+00   2.012817246e+00   3.1e-04  821.61
+12  1.1e-04  1.3e-04  3.4e-04  8.60e-01   2.012740024e+00   2.012730948e+00   2.4e-04  833.36
+13  8.9e-05  1.0e-04  2.7e-04  8.03e-01   2.012678390e+00   2.012670878e+00   1.8e-04  845.29
+14  7.6e-05  8.8e-05  2.3e-04  7.43e-01   2.012642795e+00   2.012636072e+00   1.6e-04  856.75
+15  6.5e-05  7.5e-05  1.9e-04  7.03e-01   2.012609741e+00   2.012603695e+00   1.3e-04  868.51
+16  5.3e-05  6.1e-05  1.6e-04  6.65e-01   2.012574389e+00   2.012569062e+00   1.1e-04  880.41
+17  4.5e-05  5.2e-05  1.3e-04  6.32e-01   2.012544627e+00   2.012539863e+00   9.3e-05  892.11
+18  3.8e-05  4.4e-05  1.1e-04  6.09e-01   2.012518235e+00   2.012513937e+00   7.8e-05  903.94
+19  3.3e-05  3.8e-05  9.8e-05  5.84e-01   2.012498054e+00   2.012494094e+00   6.8e-05  915.81
+20  2.9e-05  3.3e-05  8.7e-05  5.60e-01   2.012480212e+00   2.012476561e+00   6.0e-05  927.22
+21  2.4e-05  2.8e-05  7.4e-05  5.62e-01   2.012458529e+00   2.012455259e+00   5.1e-05  939.81
+22  2.2e-05  2.5e-05  6.5e-05  5.60e-01   2.012443501e+00   2.012440488e+00   4.5e-05  951.31
+23  1.8e-05  2.0e-05  5.4e-05  5.54e-01   2.012421256e+00   2.012418566e+00   3.7e-05  963.23
+24  1.6e-05  1.8e-05  4.8e-05  5.01e-01   2.012409419e+00   2.012406870e+00   3.3e-05  974.50
+25  1.4e-05  1.7e-05  4.3e-05  4.90e-01   2.012396425e+00   2.012394009e+00   3.0e-05  986.04
+Maximum amount of time 1000.00 is reached.
+Optimizer terminated. Time: 1004.73 
+
+
+Interior-point solution summary
+  Problem status  : UNKNOWN
+  Solution status : UNKNOWN
+  Primal.  obj: 2.0123964250e+00    nrm: 1e+00    Viol.  con: 2e-07    var: 2e-07  
+  Dual.    obj: 2.0123940088e+00    nrm: 1e+02    Viol.  con: 0e+00    var: 2e-07  
+Unexpected MOSEK error
+===============================================================================
+                                     CVXPY                                     
+                                    v1.1.17                                    
+===============================================================================
+(CVXPY) Jan 24 09:57:09 PM: Your problem has 5634 variables, 6 constraints, and 0 parameters.
+(CVXPY) Jan 24 09:57:09 PM: It is compliant with the following grammars: DCP, DQCP
+(CVXPY) Jan 24 09:57:09 PM: (If you need to solve this problem multiple times, but with different data, consider using parameters.)
+(CVXPY) Jan 24 09:57:09 PM: CVXPY will first compile your problem; then, it will invoke a numerical solver to obtain a solution.
+-------------------------------------------------------------------------------
+                                  Compilation                                  
+-------------------------------------------------------------------------------
+(CVXPY) Jan 24 09:57:09 PM: Compiling problem (target solver=MOSEK).
+(CVXPY) Jan 24 09:57:09 PM: Reduction chain: Dcp2Cone -> CvxAttr2Constr -> ConeMatrixStuffing -> MOSEK
+(CVXPY) Jan 24 09:57:09 PM: Applying reduction Dcp2Cone
+(CVXPY) Jan 24 09:57:09 PM: Applying reduction CvxAttr2Constr
+(CVXPY) Jan 24 09:57:09 PM: Applying reduction ConeMatrixStuffing
+(CVXPY) Jan 24 10:05:05 PM: Applying reduction MOSEK
+(CVXPY) Jan 24 10:11:10 PM: Finished problem compilation (took 8.408e+02 seconds).
+-------------------------------------------------------------------------------
+                                Numerical solver                               
+-------------------------------------------------------------------------------
+(CVXPY) Jan 24 10:11:10 PM: Invoking solver MOSEK  to obtain a solution.
+
+
+Problem
+  Name                   :                 
+  Objective sense        : max             
+  Type                   : LO (linear optimization problem)
+  Constraints            : 42004           
+  Cones                  : 0               
+  Scalar variables       : 75811           
+  Matrix variables       : 0               
+  Integer variables      : 0               
+
+Optimizer started.
+Problem
+  Name                   :                 
+  Objective sense        : max             
+  Type                   : LO (linear optimization problem)
+  Constraints            : 42004           
+  Cones                  : 0               
+  Scalar variables       : 75811           
+  Matrix variables       : 0               
+  Integer variables      : 0               
+
+Optimizer  - threads                : 2               
+Optimizer  - solved problem         : the dual        
+Optimizer  - Constraints            : 73250
+Optimizer  - Cones                  : 0
+Optimizer  - Scalar variables       : 111661            conic                  : 0               
+Optimizer  - Semi-definite variables: 0                 scalarized             : 0               
+Factor     - setup time             : 22.70             dense det. time        : 5.23            
+Factor     - ML order time          : 0.02              GP order time          : 0.00            
+Factor     - nonzeros before factor : 5.79e+07          after factor           : 5.79e+07        
+Factor     - dense dim.             : 1787              flops                  : 5.15e+10        
+ITE PFEAS    DFEAS    GFEAS    PRSTATUS   POBJ              DOBJ              MU       TIME  
+0   2.1e+00  2.4e+00  6.2e+00  0.00e+00   1.999998000e+00   3.999998000e+00   4.3e+00  685.94
+1   1.3e+00  1.5e+00  4.0e+00  -9.49e-01  5.695139723e+00   7.136333342e+00   2.8e+00  697.49
+2   3.5e-02  4.0e-02  1.0e-01  -8.03e-01  1.225126744e+01   1.232511012e+01   7.2e-02  709.11
+3   1.7e-02  2.0e-02  5.2e-02  1.27e+01   2.596857489e+00   2.591078278e+00   3.6e-02  720.64
+4   9.6e-03  1.1e-02  2.9e-02  8.21e+00   2.047353359e+00   2.045900282e+00   2.0e-02  733.09
+5   5.3e-03  6.1e-03  1.6e-02  2.03e+00   2.026374882e+00   2.025799503e+00   1.1e-02  744.85
+6   1.1e-03  1.2e-03  3.2e-03  1.49e+00   2.014689863e+00   2.014606892e+00   2.2e-03  757.19
+7   5.8e-04  6.6e-04  1.7e-03  1.03e+00   2.013704729e+00   2.013660833e+00   1.2e-03  769.31
+8   4.3e-04  4.9e-04  1.3e-03  9.81e-01   2.013406026e+00   2.013373453e+00   8.9e-04  780.50
+9   3.2e-04  3.7e-04  9.7e-04  9.59e-01   2.013198346e+00   2.013173758e+00   6.7e-04  791.85
+10  2.2e-04  2.5e-04  6.5e-04  9.41e-01   2.012970718e+00   2.012954446e+00   4.5e-04  804.28
+11  1.5e-04  1.7e-04  4.5e-04  9.06e-01   2.012828853e+00   2.012817246e+00   3.1e-04  816.42
+12  1.1e-04  1.3e-04  3.4e-04  8.60e-01   2.012740024e+00   2.012730948e+00   2.4e-04  828.17
+13  8.9e-05  1.0e-04  2.7e-04  8.03e-01   2.012678390e+00   2.012670878e+00   1.8e-04  840.09
+14  7.6e-05  8.8e-05  2.3e-04  7.43e-01   2.012642795e+00   2.012636072e+00   1.6e-04  851.45
+15  6.5e-05  7.5e-05  1.9e-04  7.03e-01   2.012609741e+00   2.012603695e+00   1.3e-04  862.96
+16  5.3e-05  6.1e-05  1.6e-04  6.65e-01   2.012574389e+00   2.012569062e+00   1.1e-04  875.19
+17  4.5e-05  5.2e-05  1.3e-04  6.32e-01   2.012544627e+00   2.012539863e+00   9.3e-05  886.85
+18  3.8e-05  4.4e-05  1.1e-04  6.09e-01   2.012518235e+00   2.012513937e+00   7.8e-05  898.42
+19  3.3e-05  3.8e-05  9.8e-05  5.84e-01   2.012498054e+00   2.012494094e+00   6.8e-05  910.61
+20  2.9e-05  3.3e-05  8.7e-05  5.60e-01   2.012480212e+00   2.012476561e+00   6.0e-05  921.84
+21  2.4e-05  2.8e-05  7.4e-05  5.62e-01   2.012458529e+00   2.012455259e+00   5.1e-05  934.15
+22  2.2e-05  2.5e-05  6.5e-05  5.60e-01   2.012443501e+00   2.012440488e+00   4.5e-05  945.84
+23  1.8e-05  2.0e-05  5.4e-05  5.54e-01   2.012421256e+00   2.012418566e+00   3.7e-05  957.50
+24  1.6e-05  1.8e-05  4.8e-05  5.01e-01   2.012409419e+00   2.012406870e+00   3.3e-05  969.03
+25  1.4e-05  1.7e-05  4.3e-05  4.90e-01   2.012396425e+00   2.012394009e+00   3.0e-05  980.48
+26  9.6e-06  9.4e-05  2.9e-05  7.48e-01   2.012362514e+00   2.012360907e+00   2.0e-05  1047.14
+Maximum amount of time 1000.00 is reached.
+Optimizer terminated. Time: 1059.23 
+
+
+Interior-point solution summary
+  Problem status  : UNKNOWN
+  Solution status : UNKNOWN
+  Primal.  obj: 2.0123625137e+00    nrm: 1e+00    Viol.  con: 1e-07    var: 1e-07  
+  Dual.    obj: 2.0123609073e+00    nrm: 1e+02    Viol.  con: 0e+00    var: 1e-06  
+Unexpected MOSEK error
+===============================================================================
+                                     CVXPY                                     
+                                    v1.1.17                                    
+===============================================================================
+(CVXPY) Jan 24 10:33:20 PM: Your problem has 5634 variables, 6 constraints, and 0 parameters.
+(CVXPY) Jan 24 10:33:20 PM: It is compliant with the following grammars: DCP, DQCP
+(CVXPY) Jan 24 10:33:20 PM: (If you need to solve this problem multiple times, but with different data, consider using parameters.)
+(CVXPY) Jan 24 10:33:20 PM: CVXPY will first compile your problem; then, it will invoke a numerical solver to obtain a solution.
+-------------------------------------------------------------------------------
+                                  Compilation                                  
+-------------------------------------------------------------------------------
+(CVXPY) Jan 24 10:33:20 PM: Compiling problem (target solver=MOSEK).
+(CVXPY) Jan 24 10:33:20 PM: Reduction chain: Dcp2Cone -> CvxAttr2Constr -> ConeMatrixStuffing -> MOSEK
+(CVXPY) Jan 24 10:33:20 PM: Applying reduction Dcp2Cone
+(CVXPY) Jan 24 10:33:20 PM: Applying reduction CvxAttr2Constr
+(CVXPY) Jan 24 10:33:20 PM: Applying reduction ConeMatrixStuffing
+(CVXPY) Jan 24 10:40:43 PM: Applying reduction MOSEK
+(CVXPY) Jan 24 10:46:42 PM: Finished problem compilation (took 8.024e+02 seconds).
+-------------------------------------------------------------------------------
+                                Numerical solver                               
+-------------------------------------------------------------------------------
+(CVXPY) Jan 24 10:46:42 PM: Invoking solver MOSEK  to obtain a solution.
+
+
+Problem
+  Name                   :                 
+  Objective sense        : max             
+  Type                   : LO (linear optimization problem)
+  Constraints            : 42004           
+  Cones                  : 0               
+  Scalar variables       : 75811           
+  Matrix variables       : 0               
+  Integer variables      : 0               
+
+Optimizer started.
+Problem
+  Name                   :                 
+  Objective sense        : max             
+  Type                   : LO (linear optimization problem)
+  Constraints            : 42004           
+  Cones                  : 0               
+  Scalar variables       : 75811           
+  Matrix variables       : 0               
+  Integer variables      : 0               
+
+Optimizer  - threads                : 2               
+Optimizer  - solved problem         : the dual        
+Optimizer  - Constraints            : 73250
+Optimizer  - Cones                  : 0
+Optimizer  - Scalar variables       : 111661            conic                  : 0               
+Optimizer  - Semi-definite variables: 0                 scalarized             : 0               
+Factor     - setup time             : 23.03             dense det. time        : 4.82            
+Factor     - ML order time          : 0.03              GP order time          : 0.00            
+Factor     - nonzeros before factor : 5.79e+07          after factor           : 5.79e+07        
+Factor     - dense dim.             : 1787              flops                  : 5.15e+10        
+ITE PFEAS    DFEAS    GFEAS    PRSTATUS   POBJ              DOBJ              MU       TIME  
+0   2.1e+00  2.4e+00  6.2e+00  0.00e+00   1.999998000e+00   3.999998000e+00   4.3e+00  693.94
+1   1.3e+00  1.5e+00  4.0e+00  -9.49e-01  5.695139723e+00   7.136333342e+00   2.8e+00  706.19
+2   3.5e-02  4.0e-02  1.0e-01  -8.03e-01  1.225126744e+01   1.232511012e+01   7.2e-02  717.77
+3   1.7e-02  2.0e-02  5.2e-02  1.27e+01   2.596857489e+00   2.591078278e+00   3.6e-02  729.48
+4   9.6e-03  1.1e-02  2.9e-02  8.21e+00   2.047353359e+00   2.045900282e+00   2.0e-02  741.78
+5   5.3e-03  6.1e-03  1.6e-02  2.03e+00   2.026374882e+00   2.025799503e+00   1.1e-02  753.71
+6   1.1e-03  1.2e-03  3.2e-03  1.49e+00   2.014689863e+00   2.014606892e+00   2.2e-03  766.28
+7   5.8e-04  6.6e-04  1.7e-03  1.03e+00   2.013704729e+00   2.013660833e+00   1.2e-03  778.16
+8   4.3e-04  4.9e-04  1.3e-03  9.81e-01   2.013406026e+00   2.013373453e+00   8.9e-04  789.84
+9   3.2e-04  3.7e-04  9.7e-04  9.59e-01   2.013198346e+00   2.013173758e+00   6.7e-04  801.05
+10  2.2e-04  2.5e-04  6.5e-04  9.41e-01   2.012970718e+00   2.012954446e+00   4.5e-04  813.26
+11  1.5e-04  1.7e-04  4.5e-04  9.06e-01   2.012828853e+00   2.012817246e+00   3.1e-04  825.63
+12  1.1e-04  1.3e-04  3.4e-04  8.60e-01   2.012740024e+00   2.012730948e+00   2.4e-04  837.12
+13  8.9e-05  1.0e-04  2.7e-04  8.03e-01   2.012678390e+00   2.012670878e+00   1.8e-04  848.92
+14  7.6e-05  8.8e-05  2.3e-04  7.43e-01   2.012642795e+00   2.012636072e+00   1.6e-04  860.41
+15  6.5e-05  7.5e-05  1.9e-04  7.03e-01   2.012609741e+00   2.012603695e+00   1.3e-04  871.95
+16  5.3e-05  6.1e-05  1.6e-04  6.65e-01   2.012574389e+00   2.012569062e+00   1.1e-04  884.09
+17  4.5e-05  5.2e-05  1.3e-04  6.32e-01   2.012544627e+00   2.012539863e+00   9.3e-05  895.66
+18  3.8e-05  4.4e-05  1.1e-04  6.09e-01   2.012518235e+00   2.012513937e+00   7.8e-05  907.12
+19  3.3e-05  3.8e-05  9.8e-05  5.84e-01   2.012498054e+00   2.012494094e+00   6.8e-05  919.21
+20  2.9e-05  3.3e-05  8.7e-05  5.60e-01   2.012480212e+00   2.012476561e+00   6.0e-05  930.32
+21  2.4e-05  2.8e-05  7.4e-05  5.62e-01   2.012458529e+00   2.012455259e+00   5.1e-05  942.71
+22  2.2e-05  2.5e-05  6.5e-05  5.60e-01   2.012443501e+00   2.012440488e+00   4.5e-05  954.18
+23  1.8e-05  2.0e-05  5.4e-05  5.54e-01   2.012421256e+00   2.012418566e+00   3.7e-05  965.91
+24  1.6e-05  1.8e-05  4.8e-05  5.01e-01   2.012409419e+00   2.012406870e+00   3.3e-05  977.44
+25  1.4e-05  1.7e-05  4.3e-05  4.90e-01   2.012396425e+00   2.012394009e+00   3.0e-05  988.72
+Maximum amount of time 1000.00 is reached.
+Optimizer terminated. Time: 1007.19 
+
+
+Interior-point solution summary
+  Problem status  : UNKNOWN
+  Solution status : UNKNOWN
+  Primal.  obj: 2.0123964250e+00    nrm: 1e+00    Viol.  con: 2e-07    var: 2e-07  
+  Dual.    obj: 2.0123940088e+00    nrm: 1e+02    Viol.  con: 0e+00    var: 2e-07  
+Unexpected MOSEK error
+===============================================================================
+                                     CVXPY                                     
+                                    v1.1.17                                    
+===============================================================================
+(CVXPY) Jan 24 11:07:50 PM: Your problem has 5634 variables, 6 constraints, and 0 parameters.
+(CVXPY) Jan 24 11:07:50 PM: It is compliant with the following grammars: DCP, DQCP
+(CVXPY) Jan 24 11:07:50 PM: (If you need to solve this problem multiple times, but with different data, consider using parameters.)
+(CVXPY) Jan 24 11:07:50 PM: CVXPY will first compile your problem; then, it will invoke a numerical solver to obtain a solution.
+-------------------------------------------------------------------------------
+                                  Compilation                                  
+-------------------------------------------------------------------------------
+(CVXPY) Jan 24 11:07:50 PM: Compiling problem (target solver=MOSEK).
+(CVXPY) Jan 24 11:07:50 PM: Reduction chain: Dcp2Cone -> CvxAttr2Constr -> ConeMatrixStuffing -> MOSEK
+(CVXPY) Jan 24 11:07:50 PM: Applying reduction Dcp2Cone
+(CVXPY) Jan 24 11:07:51 PM: Applying reduction CvxAttr2Constr
+(CVXPY) Jan 24 11:07:51 PM: Applying reduction ConeMatrixStuffing
+(CVXPY) Jan 24 11:15:40 PM: Applying reduction MOSEK
+(CVXPY) Jan 24 11:21:42 PM: Finished problem compilation (took 8.315e+02 seconds).
+-------------------------------------------------------------------------------
+                                Numerical solver                               
+-------------------------------------------------------------------------------
+(CVXPY) Jan 24 11:21:42 PM: Invoking solver MOSEK  to obtain a solution.
+
+
+Problem
+  Name                   :                 
+  Objective sense        : max             
+  Type                   : LO (linear optimization problem)
+  Constraints            : 42004           
+  Cones                  : 0               
+  Scalar variables       : 75811           
+  Matrix variables       : 0               
+  Integer variables      : 0               
+
+Optimizer started.
+Problem
+  Name                   :                 
+  Objective sense        : max             
+  Type                   : LO (linear optimization problem)
+  Constraints            : 42004           
+  Cones                  : 0               
+  Scalar variables       : 75811           
+  Matrix variables       : 0               
+  Integer variables      : 0               
+
+Optimizer  - threads                : 2               
+Optimizer  - solved problem         : the dual        
+Optimizer  - Constraints            : 73250
+Optimizer  - Cones                  : 0
+Optimizer  - Scalar variables       : 111661            conic                  : 0               
+Optimizer  - Semi-definite variables: 0                 scalarized             : 0               
+Factor     - setup time             : 21.88             dense det. time        : 4.83            
+Factor     - ML order time          : 0.02              GP order time          : 0.00            
+Factor     - nonzeros before factor : 5.79e+07          after factor           : 5.79e+07        
+Factor     - dense dim.             : 1787              flops                  : 5.15e+10        
+ITE PFEAS    DFEAS    GFEAS    PRSTATUS   POBJ              DOBJ              MU       TIME  
+0   2.1e+00  2.4e+00  6.2e+00  0.00e+00   1.999998000e+00   3.999998000e+00   4.3e+00  687.91
+1   1.3e+00  1.5e+00  4.0e+00  -9.49e-01  5.695139723e+00   7.136333342e+00   2.8e+00  699.34
+2   3.5e-02  4.0e-02  1.0e-01  -8.03e-01  1.225126744e+01   1.232511012e+01   7.2e-02  710.98
+3   1.7e-02  2.0e-02  5.2e-02  1.27e+01   2.596857489e+00   2.591078278e+00   3.6e-02  722.41
+4   9.6e-03  1.1e-02  2.9e-02  8.21e+00   2.047353359e+00   2.045900282e+00   2.0e-02  734.77
+5   5.3e-03  6.1e-03  1.6e-02  2.03e+00   2.026374882e+00   2.025799503e+00   1.1e-02  746.72
+6   1.1e-03  1.2e-03  3.2e-03  1.49e+00   2.014689863e+00   2.014606892e+00   2.2e-03  758.95
+7   5.8e-04  6.6e-04  1.7e-03  1.03e+00   2.013704729e+00   2.013660833e+00   1.2e-03  770.95
+8   4.3e-04  4.9e-04  1.3e-03  9.81e-01   2.013406026e+00   2.013373453e+00   8.9e-04  782.36
+9   3.2e-04  3.7e-04  9.7e-04  9.59e-01   2.013198346e+00   2.013173758e+00   6.7e-04  793.56
+10  2.2e-04  2.5e-04  6.5e-04  9.41e-01   2.012970718e+00   2.012954446e+00   4.5e-04  805.73
+11  1.5e-04  1.7e-04  4.5e-04  9.06e-01   2.012828853e+00   2.012817246e+00   3.1e-04  817.83
+12  1.1e-04  1.3e-04  3.4e-04  8.60e-01   2.012740024e+00   2.012730948e+00   2.4e-04  829.47
+13  8.9e-05  1.0e-04  2.7e-04  8.03e-01   2.012678390e+00   2.012670878e+00   1.8e-04  841.48
+14  7.6e-05  8.8e-05  2.3e-04  7.43e-01   2.012642795e+00   2.012636072e+00   1.6e-04  852.87
+15  6.5e-05  7.5e-05  1.9e-04  7.03e-01   2.012609741e+00   2.012603695e+00   1.3e-04  864.40
+16  5.3e-05  6.1e-05  1.6e-04  6.65e-01   2.012574389e+00   2.012569062e+00   1.1e-04  876.39
+17  4.5e-05  5.2e-05  1.3e-04  6.32e-01   2.012544627e+00   2.012539863e+00   9.3e-05  887.97
+18  3.8e-05  4.4e-05  1.1e-04  6.09e-01   2.012518235e+00   2.012513937e+00   7.8e-05  899.57
+19  3.3e-05  3.8e-05  9.8e-05  5.84e-01   2.012498054e+00   2.012494094e+00   6.8e-05  911.53
+20  2.9e-05  3.3e-05  8.7e-05  5.60e-01   2.012480212e+00   2.012476561e+00   6.0e-05  922.61
+21  2.4e-05  2.8e-05  7.4e-05  5.62e-01   2.012458529e+00   2.012455259e+00   5.1e-05  935.15
+22  2.2e-05  2.5e-05  6.5e-05  5.60e-01   2.012443501e+00   2.012440488e+00   4.5e-05  946.51
+23  1.8e-05  2.0e-05  5.4e-05  5.54e-01   2.012421256e+00   2.012418566e+00   3.7e-05  958.16
+24  1.6e-05  1.8e-05  4.8e-05  5.01e-01   2.012409419e+00   2.012406870e+00   3.3e-05  969.66
+25  1.4e-05  1.7e-05  4.3e-05  4.90e-01   2.012396425e+00   2.012394009e+00   3.0e-05  980.81
+26  9.6e-06  9.4e-05  2.9e-05  7.48e-01   2.012362514e+00   2.012360907e+00   2.0e-05  1046.87
+Maximum amount of time 1000.00 is reached.
+Optimizer terminated. Time: 1058.77 
+
+
+Interior-point solution summary
+  Problem status  : UNKNOWN
+  Solution status : UNKNOWN
+  Primal.  obj: 2.0123625137e+00    nrm: 1e+00    Viol.  con: 1e-07    var: 1e-07  
+  Dual.    obj: 2.0123609073e+00    nrm: 1e+02    Viol.  con: 0e+00    var: 1e-06  
+Unexpected MOSEK error
+===============================================================================
+                                     CVXPY                                     
+                                    v1.1.17                                    
+===============================================================================
+(CVXPY) Jan 24 11:43:25 PM: Your problem has 5634 variables, 6 constraints, and 0 parameters.
+(CVXPY) Jan 24 11:43:25 PM: It is compliant with the following grammars: DCP, DQCP
+(CVXPY) Jan 24 11:43:25 PM: (If you need to solve this problem multiple times, but with different data, consider using parameters.)
+(CVXPY) Jan 24 11:43:25 PM: CVXPY will first compile your problem; then, it will invoke a numerical solver to obtain a solution.
+-------------------------------------------------------------------------------
+                                  Compilation                                  
+-------------------------------------------------------------------------------
+(CVXPY) Jan 24 11:43:25 PM: Compiling problem (target solver=MOSEK).
+(CVXPY) Jan 24 11:43:25 PM: Reduction chain: Dcp2Cone -> CvxAttr2Constr -> ConeMatrixStuffing -> MOSEK
+(CVXPY) Jan 24 11:43:25 PM: Applying reduction Dcp2Cone
+(CVXPY) Jan 24 11:43:25 PM: Applying reduction CvxAttr2Constr
+(CVXPY) Jan 24 11:43:25 PM: Applying reduction ConeMatrixStuffing
+(CVXPY) Jan 24 11:50:55 PM: Applying reduction MOSEK
+(CVXPY) Jan 24 11:56:55 PM: Finished problem compilation (took 8.100e+02 seconds).
+-------------------------------------------------------------------------------
+                                Numerical solver                               
+-------------------------------------------------------------------------------
+(CVXPY) Jan 24 11:56:55 PM: Invoking solver MOSEK  to obtain a solution.
+
+
+Problem
+  Name                   :                 
+  Objective sense        : max             
+  Type                   : LO (linear optimization problem)
+  Constraints            : 42004           
+  Cones                  : 0               
+  Scalar variables       : 75811           
+  Matrix variables       : 0               
+  Integer variables      : 0               
+
+Optimizer started.
+Problem
+  Name                   :                 
+  Objective sense        : max             
+  Type                   : LO (linear optimization problem)
+  Constraints            : 42004           
+  Cones                  : 0               
+  Scalar variables       : 75811           
+  Matrix variables       : 0               
+  Integer variables      : 0               
+
+Optimizer  - threads                : 2               
+Optimizer  - solved problem         : the dual        
+Optimizer  - Constraints            : 73250
+Optimizer  - Cones                  : 0
+Optimizer  - Scalar variables       : 111661            conic                  : 0               
+Optimizer  - Semi-definite variables: 0                 scalarized             : 0               
+Factor     - setup time             : 23.59             dense det. time        : 5.26            
+Factor     - ML order time          : 0.02              GP order time          : 0.00            
+Factor     - nonzeros before factor : 5.79e+07          after factor           : 5.79e+07        
+Factor     - dense dim.             : 1787              flops                  : 5.15e+10        
+ITE PFEAS    DFEAS    GFEAS    PRSTATUS   POBJ              DOBJ              MU       TIME  
+0   2.1e+00  2.4e+00  6.2e+00  0.00e+00   1.999998000e+00   3.999998000e+00   4.3e+00  693.07
+1   1.3e+00  1.5e+00  4.0e+00  -9.49e-01  5.695139723e+00   7.136333342e+00   2.8e+00  705.16
+2   3.5e-02  4.0e-02  1.0e-01  -8.03e-01  1.225126744e+01   1.232511012e+01   7.2e-02  716.90
+3   1.7e-02  2.0e-02  5.2e-02  1.27e+01   2.596857489e+00   2.591078278e+00   3.6e-02  728.32
+4   9.6e-03  1.1e-02  2.9e-02  8.21e+00   2.047353359e+00   2.045900282e+00   2.0e-02  740.82
+5   5.3e-03  6.1e-03  1.6e-02  2.03e+00   2.026374882e+00   2.025799503e+00   1.1e-02  752.73
+6   1.1e-03  1.2e-03  3.2e-03  1.49e+00   2.014689863e+00   2.014606892e+00   2.2e-03  765.18
+7   5.8e-04  6.6e-04  1.7e-03  1.03e+00   2.013704729e+00   2.013660833e+00   1.2e-03  777.38
+8   4.3e-04  4.9e-04  1.3e-03  9.81e-01   2.013406026e+00   2.013373453e+00   8.9e-04  788.71
+9   3.2e-04  3.7e-04  9.7e-04  9.59e-01   2.013198346e+00   2.013173758e+00   6.7e-04  800.13
+10  2.2e-04  2.5e-04  6.5e-04  9.41e-01   2.012970718e+00   2.012954446e+00   4.5e-04  812.59
+11  1.5e-04  1.7e-04  4.5e-04  9.06e-01   2.012828853e+00   2.012817246e+00   3.1e-04  824.58
+12  1.1e-04  1.3e-04  3.4e-04  8.60e-01   2.012740024e+00   2.012730948e+00   2.4e-04  836.42
+13  8.9e-05  1.0e-04  2.7e-04  8.03e-01   2.012678390e+00   2.012670878e+00   1.8e-04  848.35
+14  7.6e-05  8.8e-05  2.3e-04  7.43e-01   2.012642795e+00   2.012636072e+00   1.6e-04  859.81
+15  6.5e-05  7.5e-05  1.9e-04  7.03e-01   2.012609741e+00   2.012603695e+00   1.3e-04  871.62
+16  5.3e-05  6.1e-05  1.6e-04  6.65e-01   2.012574389e+00   2.012569062e+00   1.1e-04  883.52
+17  4.5e-05  5.2e-05  1.3e-04  6.32e-01   2.012544627e+00   2.012539863e+00   9.3e-05  895.35
+18  3.8e-05  4.4e-05  1.1e-04  6.09e-01   2.012518235e+00   2.012513937e+00   7.8e-05  907.21
+19  3.3e-05  3.8e-05  9.8e-05  5.84e-01   2.012498054e+00   2.012494094e+00   6.8e-05  919.08
+20  2.9e-05  3.3e-05  8.7e-05  5.60e-01   2.012480212e+00   2.012476561e+00   6.0e-05  930.43
+21  2.4e-05  2.8e-05  7.4e-05  5.62e-01   2.012458529e+00   2.012455259e+00   5.1e-05  942.89
+22  2.2e-05  2.5e-05  6.5e-05  5.60e-01   2.012443501e+00   2.012440488e+00   4.5e-05  954.26
+23  1.8e-05  2.0e-05  5.4e-05  5.54e-01   2.012421256e+00   2.012418566e+00   3.7e-05  966.25
+24  1.6e-05  1.8e-05  4.8e-05  5.01e-01   2.012409419e+00   2.012406870e+00   3.3e-05  977.48
+25  1.4e-05  1.7e-05  4.3e-05  4.90e-01   2.012396425e+00   2.012394009e+00   3.0e-05  988.97
+Maximum amount of time 1000.00 is reached.
+Optimizer terminated. Time: 1009.26 
+
+
+Interior-point solution summary
+  Problem status  : UNKNOWN
+  Solution status : UNKNOWN
+  Primal.  obj: 2.0123964250e+00    nrm: 1e+00    Viol.  con: 2e-07    var: 2e-07  
+  Dual.    obj: 2.0123940088e+00    nrm: 1e+02    Viol.  con: 0e+00    var: 2e-07  
+Unexpected MOSEK error
+===============================================================================
+                                     CVXPY                                     
+                                    v1.1.17                                    
+===============================================================================
+(CVXPY) Jan 25 12:18:18 AM: Your problem has 5634 variables, 6 constraints, and 0 parameters.
+(CVXPY) Jan 25 12:18:19 AM: It is compliant with the following grammars: DCP, DQCP
+(CVXPY) Jan 25 12:18:19 AM: (If you need to solve this problem multiple times, but with different data, consider using parameters.)
+(CVXPY) Jan 25 12:18:19 AM: CVXPY will first compile your problem; then, it will invoke a numerical solver to obtain a solution.
+-------------------------------------------------------------------------------
+                                  Compilation                                  
+-------------------------------------------------------------------------------
+(CVXPY) Jan 25 12:18:19 AM: Compiling problem (target solver=MOSEK).
+(CVXPY) Jan 25 12:18:19 AM: Reduction chain: Dcp2Cone -> CvxAttr2Constr -> ConeMatrixStuffing -> MOSEK
+(CVXPY) Jan 25 12:18:19 AM: Applying reduction Dcp2Cone
+(CVXPY) Jan 25 12:18:19 AM: Applying reduction CvxAttr2Constr
+(CVXPY) Jan 25 12:18:19 AM: Applying reduction ConeMatrixStuffing
+(CVXPY) Jan 25 12:26:09 AM: Applying reduction MOSEK
+(CVXPY) Jan 25 12:32:13 AM: Finished problem compilation (took 8.347e+02 seconds).
+-------------------------------------------------------------------------------
+                                Numerical solver                               
+-------------------------------------------------------------------------------
+(CVXPY) Jan 25 12:32:13 AM: Invoking solver MOSEK  to obtain a solution.
+
+
+Problem
+  Name                   :                 
+  Objective sense        : max             
+  Type                   : LO (linear optimization problem)
+  Constraints            : 42004           
+  Cones                  : 0               
+  Scalar variables       : 75811           
+  Matrix variables       : 0               
+  Integer variables      : 0               
+
+Optimizer started.
+Problem
+  Name                   :                 
+  Objective sense        : max             
+  Type                   : LO (linear optimization problem)
+  Constraints            : 42004           
+  Cones                  : 0               
+  Scalar variables       : 75811           
+  Matrix variables       : 0               
+  Integer variables      : 0               
+
+Optimizer  - threads                : 2               
+Optimizer  - solved problem         : the dual        
+Optimizer  - Constraints            : 73250
+Optimizer  - Cones                  : 0
+Optimizer  - Scalar variables       : 111661            conic                  : 0               
+Optimizer  - Semi-definite variables: 0                 scalarized             : 0               
+Factor     - setup time             : 20.84             dense det. time        : 4.52            
+Factor     - ML order time          : 0.02              GP order time          : 0.00            
+Factor     - nonzeros before factor : 5.79e+07          after factor           : 5.79e+07        
+Factor     - dense dim.             : 1787              flops                  : 5.15e+10        
+ITE PFEAS    DFEAS    GFEAS    PRSTATUS   POBJ              DOBJ              MU       TIME  
+0   2.1e+00  2.4e+00  6.2e+00  0.00e+00   1.999998000e+00   3.999998000e+00   4.3e+00  685.47
+1   1.3e+00  1.5e+00  4.0e+00  -9.49e-01  5.695139723e+00   7.136333342e+00   2.8e+00  697.14
+2   3.5e-02  4.0e-02  1.0e-01  -8.03e-01  1.225126744e+01   1.232511012e+01   7.2e-02  708.95
+3   1.7e-02  2.0e-02  5.2e-02  1.27e+01   2.596857489e+00   2.591078278e+00   3.6e-02  720.46
+4   9.6e-03  1.1e-02  2.9e-02  8.21e+00   2.047353359e+00   2.045900282e+00   2.0e-02  733.05
+5   5.3e-03  6.1e-03  1.6e-02  2.03e+00   2.026374882e+00   2.025799503e+00   1.1e-02  745.27
+6   1.1e-03  1.2e-03  3.2e-03  1.49e+00   2.014689863e+00   2.014606892e+00   2.2e-03  757.88
+7   5.8e-04  6.6e-04  1.7e-03  1.03e+00   2.013704729e+00   2.013660833e+00   1.2e-03  770.01
+8   4.3e-04  4.9e-04  1.3e-03  9.81e-01   2.013406026e+00   2.013373453e+00   8.9e-04  781.75
+9   3.2e-04  3.7e-04  9.7e-04  9.59e-01   2.013198346e+00   2.013173758e+00   6.7e-04  793.05
+10  2.2e-04  2.5e-04  6.5e-04  9.41e-01   2.012970718e+00   2.012954446e+00   4.5e-04  805.40
+11  1.5e-04  1.7e-04  4.5e-04  9.06e-01   2.012828853e+00   2.012817246e+00   3.1e-04  817.88
+12  1.1e-04  1.3e-04  3.4e-04  8.60e-01   2.012740024e+00   2.012730948e+00   2.4e-04  829.58
+13  8.9e-05  1.0e-04  2.7e-04  8.03e-01   2.012678390e+00   2.012670878e+00   1.8e-04  841.45
+14  7.6e-05  8.8e-05  2.3e-04  7.43e-01   2.012642795e+00   2.012636072e+00   1.6e-04  853.25
+15  6.5e-05  7.5e-05  1.9e-04  7.03e-01   2.012609741e+00   2.012603695e+00   1.3e-04  864.78
+16  5.3e-05  6.1e-05  1.6e-04  6.65e-01   2.012574389e+00   2.012569062e+00   1.1e-04  876.91
+17  4.5e-05  5.2e-05  1.3e-04  6.32e-01   2.012544627e+00   2.012539863e+00   9.3e-05  888.80
+18  3.8e-05  4.4e-05  1.1e-04  6.09e-01   2.012518235e+00   2.012513937e+00   7.8e-05  900.30
+19  3.3e-05  3.8e-05  9.8e-05  5.84e-01   2.012498054e+00   2.012494094e+00   6.8e-05  912.42
+20  2.9e-05  3.3e-05  8.7e-05  5.60e-01   2.012480212e+00   2.012476561e+00   6.0e-05  923.88
+21  2.4e-05  2.8e-05  7.4e-05  5.62e-01   2.012458529e+00   2.012455259e+00   5.1e-05  936.22
+22  2.2e-05  2.5e-05  6.5e-05  5.60e-01   2.012443501e+00   2.012440488e+00   4.5e-05  948.00
+23  1.8e-05  2.0e-05  5.4e-05  5.54e-01   2.012421256e+00   2.012418566e+00   3.7e-05  959.75
+24  1.6e-05  1.8e-05  4.8e-05  5.01e-01   2.012409419e+00   2.012406870e+00   3.3e-05  971.11
+25  1.4e-05  1.7e-05  4.3e-05  4.90e-01   2.012396425e+00   2.012394009e+00   3.0e-05  982.95
+26  9.6e-06  9.4e-05  2.9e-05  7.48e-01   2.012362514e+00   2.012360907e+00   2.0e-05  1050.11
+Maximum amount of time 1000.00 is reached.
+Optimizer terminated. Time: 1062.08 
+
+
+Interior-point solution summary
+  Problem status  : UNKNOWN
+  Solution status : UNKNOWN
+  Primal.  obj: 2.0123625137e+00    nrm: 1e+00    Viol.  con: 1e-07    var: 1e-07  
+  Dual.    obj: 2.0123609073e+00    nrm: 1e+02    Viol.  con: 0e+00    var: 1e-06  
+Unexpected MOSEK error
+===============================================================================
+                                     CVXPY                                     
+                                    v1.1.17                                    
+===============================================================================
+(CVXPY) Jan 25 12:54:16 AM: Your problem has 5634 variables, 6 constraints, and 0 parameters.
+(CVXPY) Jan 25 12:54:16 AM: It is compliant with the following grammars: DCP, DQCP
+(CVXPY) Jan 25 12:54:16 AM: (If you need to solve this problem multiple times, but with different data, consider using parameters.)
+(CVXPY) Jan 25 12:54:16 AM: CVXPY will first compile your problem; then, it will invoke a numerical solver to obtain a solution.
+-------------------------------------------------------------------------------
+                                  Compilation                                  
+-------------------------------------------------------------------------------
+(CVXPY) Jan 25 12:54:16 AM: Compiling problem (target solver=MOSEK).
+(CVXPY) Jan 25 12:54:16 AM: Reduction chain: Dcp2Cone -> CvxAttr2Constr -> ConeMatrixStuffing -> MOSEK
+(CVXPY) Jan 25 12:54:16 AM: Applying reduction Dcp2Cone
+(CVXPY) Jan 25 12:54:16 AM: Applying reduction CvxAttr2Constr
+(CVXPY) Jan 25 12:54:16 AM: Applying reduction ConeMatrixStuffing
+(CVXPY) Jan 25 01:01:41 AM: Applying reduction MOSEK
+(CVXPY) Jan 25 01:07:45 AM: Finished problem compilation (took 8.092e+02 seconds).
+-------------------------------------------------------------------------------
+                                Numerical solver                               
+-------------------------------------------------------------------------------
+(CVXPY) Jan 25 01:07:45 AM: Invoking solver MOSEK  to obtain a solution.
+
+
+Problem
+  Name                   :                 
+  Objective sense        : max             
+  Type                   : LO (linear optimization problem)
+  Constraints            : 42004           
+  Cones                  : 0               
+  Scalar variables       : 75811           
+  Matrix variables       : 0               
+  Integer variables      : 0               
+
+Optimizer started.
+Problem
+  Name                   :                 
+  Objective sense        : max             
+  Type                   : LO (linear optimization problem)
+  Constraints            : 42004           
+  Cones                  : 0               
+  Scalar variables       : 75811           
+  Matrix variables       : 0               
+  Integer variables      : 0               
+
+Optimizer  - threads                : 2               
+Optimizer  - solved problem         : the dual        
+Optimizer  - Constraints            : 73250
+Optimizer  - Cones                  : 0
+Optimizer  - Scalar variables       : 111661            conic                  : 0               
+Optimizer  - Semi-definite variables: 0                 scalarized             : 0               
+Factor     - setup time             : 22.87             dense det. time        : 4.82            
+Factor     - ML order time          : 0.03              GP order time          : 0.00            
+Factor     - nonzeros before factor : 5.79e+07          after factor           : 5.79e+07        
+Factor     - dense dim.             : 1787              flops                  : 5.15e+10        
+ITE PFEAS    DFEAS    GFEAS    PRSTATUS   POBJ              DOBJ              MU       TIME  
+0   2.1e+00  2.4e+00  6.2e+00  0.00e+00   1.999998000e+00   3.999998000e+00   4.3e+00  695.28
+1   1.3e+00  1.5e+00  4.0e+00  -9.49e-01  5.695139723e+00   7.136333342e+00   2.8e+00  707.53
+2   3.5e-02  4.0e-02  1.0e-01  -8.03e-01  1.225126744e+01   1.232511012e+01   7.2e-02  719.12
+3   1.7e-02  2.0e-02  5.2e-02  1.27e+01   2.596857489e+00   2.591078278e+00   3.6e-02  730.92
+4   9.6e-03  1.1e-02  2.9e-02  8.21e+00   2.047353359e+00   2.045900282e+00   2.0e-02  743.17
+5   5.3e-03  6.1e-03  1.6e-02  2.03e+00   2.026374882e+00   2.025799503e+00   1.1e-02  755.63
+6   1.1e-03  1.2e-03  3.2e-03  1.49e+00   2.014689863e+00   2.014606892e+00   2.2e-03  768.37
+7   5.8e-04  6.6e-04  1.7e-03  1.03e+00   2.013704729e+00   2.013660833e+00   1.2e-03  780.16
+8   4.3e-04  4.9e-04  1.3e-03  9.81e-01   2.013406026e+00   2.013373453e+00   8.9e-04  791.72
+9   3.2e-04  3.7e-04  9.7e-04  9.59e-01   2.013198346e+00   2.013173758e+00   6.7e-04  802.89
+10  2.2e-04  2.5e-04  6.5e-04  9.41e-01   2.012970718e+00   2.012954446e+00   4.5e-04  815.00
+11  1.5e-04  1.7e-04  4.5e-04  9.06e-01   2.012828853e+00   2.012817246e+00   3.1e-04  827.25
+12  1.1e-04  1.3e-04  3.4e-04  8.60e-01   2.012740024e+00   2.012730948e+00   2.4e-04  838.83
+13  8.9e-05  1.0e-04  2.7e-04  8.03e-01   2.012678390e+00   2.012670878e+00   1.8e-04  850.68
+14  7.6e-05  8.8e-05  2.3e-04  7.43e-01   2.012642795e+00   2.012636072e+00   1.6e-04  862.15
+15  6.5e-05  7.5e-05  1.9e-04  7.03e-01   2.012609741e+00   2.012603695e+00   1.3e-04  873.71
+16  5.3e-05  6.1e-05  1.6e-04  6.65e-01   2.012574389e+00   2.012569062e+00   1.1e-04  885.85
+17  4.5e-05  5.2e-05  1.3e-04  6.32e-01   2.012544627e+00   2.012539863e+00   9.3e-05  897.31
+18  3.8e-05  4.4e-05  1.1e-04  6.09e-01   2.012518235e+00   2.012513937e+00   7.8e-05  908.96
+19  3.3e-05  3.8e-05  9.8e-05  5.84e-01   2.012498054e+00   2.012494094e+00   6.8e-05  920.89
+20  2.9e-05  3.3e-05  8.7e-05  5.60e-01   2.012480212e+00   2.012476561e+00   6.0e-05  932.13
+21  2.4e-05  2.8e-05  7.4e-05  5.62e-01   2.012458529e+00   2.012455259e+00   5.1e-05  944.66
+22  2.2e-05  2.5e-05  6.5e-05  5.60e-01   2.012443501e+00   2.012440488e+00   4.5e-05  956.04
+23  1.8e-05  2.0e-05  5.4e-05  5.54e-01   2.012421256e+00   2.012418566e+00   3.7e-05  967.80
+24  1.6e-05  1.8e-05  4.8e-05  5.01e-01   2.012409419e+00   2.012406870e+00   3.3e-05  979.27
+Maximum amount of time 1000.00 is reached.
+Optimizer terminated. Time: 1004.03 
+
+
+Interior-point solution summary
+  Problem status  : UNKNOWN
+  Solution status : UNKNOWN
+  Primal.  obj: 2.0124094191e+00    nrm: 1e+00    Viol.  con: 2e-07    var: 2e-07  
+  Dual.    obj: 2.0124068704e+00    nrm: 1e+02    Viol.  con: 0e+00    var: 2e-07  
+Unexpected MOSEK error
+===============================================================================
+                                     CVXPY                                     
+                                    v1.1.17                                    
+===============================================================================
+(CVXPY) Jan 25 01:28:46 AM: Your problem has 5634 variables, 6 constraints, and 0 parameters.
+(CVXPY) Jan 25 01:28:46 AM: It is compliant with the following grammars: DCP, DQCP
+(CVXPY) Jan 25 01:28:46 AM: (If you need to solve this problem multiple times, but with different data, consider using parameters.)
+(CVXPY) Jan 25 01:28:46 AM: CVXPY will first compile your problem; then, it will invoke a numerical solver to obtain a solution.
+-------------------------------------------------------------------------------
+                                  Compilation                                  
+-------------------------------------------------------------------------------
+(CVXPY) Jan 25 01:28:46 AM: Compiling problem (target solver=MOSEK).
+(CVXPY) Jan 25 01:28:46 AM: Reduction chain: Dcp2Cone -> CvxAttr2Constr -> ConeMatrixStuffing -> MOSEK
+(CVXPY) Jan 25 01:28:46 AM: Applying reduction Dcp2Cone
+(CVXPY) Jan 25 01:28:46 AM: Applying reduction CvxAttr2Constr
+(CVXPY) Jan 25 01:28:46 AM: Applying reduction ConeMatrixStuffing
+(CVXPY) Jan 25 01:36:41 AM: Applying reduction MOSEK
+(CVXPY) Jan 25 01:42:45 AM: Finished problem compilation (took 8.384e+02 seconds).
+-------------------------------------------------------------------------------
+                                Numerical solver                               
+-------------------------------------------------------------------------------
+(CVXPY) Jan 25 01:42:45 AM: Invoking solver MOSEK  to obtain a solution.
+
+
+Problem
+  Name                   :                 
+  Objective sense        : max             
+  Type                   : LO (linear optimization problem)
+  Constraints            : 42004           
+  Cones                  : 0               
+  Scalar variables       : 75811           
+  Matrix variables       : 0               
+  Integer variables      : 0               
+
+Optimizer started.
+Problem
+  Name                   :                 
+  Objective sense        : max             
+  Type                   : LO (linear optimization problem)
+  Constraints            : 42004           
+  Cones                  : 0               
+  Scalar variables       : 75811           
+  Matrix variables       : 0               
+  Integer variables      : 0               
+
+Optimizer  - threads                : 2               
+Optimizer  - solved problem         : the dual        
+Optimizer  - Constraints            : 73250
+Optimizer  - Cones                  : 0
+Optimizer  - Scalar variables       : 111661            conic                  : 0               
+Optimizer  - Semi-definite variables: 0                 scalarized             : 0               
+Factor     - setup time             : 22.17             dense det. time        : 4.92            
+Factor     - ML order time          : 0.02              GP order time          : 0.00            
+Factor     - nonzeros before factor : 5.79e+07          after factor           : 5.79e+07        
+Factor     - dense dim.             : 1787              flops                  : 5.15e+10        
+ITE PFEAS    DFEAS    GFEAS    PRSTATUS   POBJ              DOBJ              MU       TIME  
+0   2.1e+00  2.4e+00  6.2e+00  0.00e+00   1.999998000e+00   3.999998000e+00   4.3e+00  685.54
+1   1.3e+00  1.5e+00  4.0e+00  -9.49e-01  5.695139723e+00   7.136333342e+00   2.8e+00  697.08
+2   3.5e-02  4.0e-02  1.0e-01  -8.03e-01  1.225126744e+01   1.232511012e+01   7.2e-02  708.81
+3   1.7e-02  2.0e-02  5.2e-02  1.27e+01   2.596857489e+00   2.591078278e+00   3.6e-02  720.34
+4   9.6e-03  1.1e-02  2.9e-02  8.21e+00   2.047353359e+00   2.045900282e+00   2.0e-02  732.54
+5   5.3e-03  6.1e-03  1.6e-02  2.03e+00   2.026374882e+00   2.025799503e+00   1.1e-02  744.50
+6   1.1e-03  1.2e-03  3.2e-03  1.49e+00   2.014689863e+00   2.014606892e+00   2.2e-03  756.92
+7   5.8e-04  6.6e-04  1.7e-03  1.03e+00   2.013704729e+00   2.013660833e+00   1.2e-03  768.88
+8   4.3e-04  4.9e-04  1.3e-03  9.81e-01   2.013406026e+00   2.013373453e+00   8.9e-04  780.44
+9   3.2e-04  3.7e-04  9.7e-04  9.59e-01   2.013198346e+00   2.013173758e+00   6.7e-04  791.60
+10  2.2e-04  2.5e-04  6.5e-04  9.41e-01   2.012970718e+00   2.012954446e+00   4.5e-04  803.75
+11  1.5e-04  1.7e-04  4.5e-04  9.06e-01   2.012828853e+00   2.012817246e+00   3.1e-04  816.12
+12  1.1e-04  1.3e-04  3.4e-04  8.60e-01   2.012740024e+00   2.012730948e+00   2.4e-04  827.72
+13  8.9e-05  1.0e-04  2.7e-04  8.03e-01   2.012678390e+00   2.012670878e+00   1.8e-04  839.44
+14  7.6e-05  8.8e-05  2.3e-04  7.43e-01   2.012642795e+00   2.012636072e+00   1.6e-04  851.19
+15  6.5e-05  7.5e-05  1.9e-04  7.03e-01   2.012609741e+00   2.012603695e+00   1.3e-04  862.55
+16  5.3e-05  6.1e-05  1.6e-04  6.65e-01   2.012574389e+00   2.012569062e+00   1.1e-04  874.48
+17  4.5e-05  5.2e-05  1.3e-04  6.32e-01   2.012544627e+00   2.012539863e+00   9.3e-05  886.46
+18  3.8e-05  4.4e-05  1.1e-04  6.09e-01   2.012518235e+00   2.012513937e+00   7.8e-05  897.77
+19  3.3e-05  3.8e-05  9.8e-05  5.84e-01   2.012498054e+00   2.012494094e+00   6.8e-05  909.73
+20  2.9e-05  3.3e-05  8.7e-05  5.60e-01   2.012480212e+00   2.012476561e+00   6.0e-05  921.19
+21  2.4e-05  2.8e-05  7.4e-05  5.62e-01   2.012458529e+00   2.012455259e+00   5.1e-05  933.38
+22  2.2e-05  2.5e-05  6.5e-05  5.60e-01   2.012443501e+00   2.012440488e+00   4.5e-05  945.00
+23  1.8e-05  2.0e-05  5.4e-05  5.54e-01   2.012421256e+00   2.012418566e+00   3.7e-05  956.81
+24  1.6e-05  1.8e-05  4.8e-05  5.01e-01   2.012409419e+00   2.012406870e+00   3.3e-05  968.00
+25  1.4e-05  1.7e-05  4.3e-05  4.90e-01   2.012396425e+00   2.012394009e+00   3.0e-05  979.72
+26  9.6e-06  9.4e-05  2.9e-05  7.48e-01   2.012362514e+00   2.012360907e+00   2.0e-05  1046.62
+Maximum amount of time 1000.00 is reached.
+Optimizer terminated. Time: 1059.09 
+
+
+Interior-point solution summary
+  Problem status  : UNKNOWN
+  Solution status : UNKNOWN
+  Primal.  obj: 2.0123625137e+00    nrm: 1e+00    Viol.  con: 1e-07    var: 1e-07  
+  Dual.    obj: 2.0123609073e+00    nrm: 1e+02    Viol.  con: 0e+00    var: 1e-06  
+Unexpected MOSEK error
+===============================================================================
+                                     CVXPY                                     
+                                    v1.1.17                                    
+===============================================================================
+(CVXPY) Jan 25 02:04:47 AM: Your problem has 5634 variables, 6 constraints, and 0 parameters.
+(CVXPY) Jan 25 02:04:47 AM: It is compliant with the following grammars: DCP, DQCP
+(CVXPY) Jan 25 02:04:47 AM: (If you need to solve this problem multiple times, but with different data, consider using parameters.)
+(CVXPY) Jan 25 02:04:47 AM: CVXPY will first compile your problem; then, it will invoke a numerical solver to obtain a solution.
+-------------------------------------------------------------------------------
+                                  Compilation                                  
+-------------------------------------------------------------------------------
+(CVXPY) Jan 25 02:04:47 AM: Compiling problem (target solver=MOSEK).
+(CVXPY) Jan 25 02:04:47 AM: Reduction chain: Dcp2Cone -> CvxAttr2Constr -> ConeMatrixStuffing -> MOSEK
+(CVXPY) Jan 25 02:04:47 AM: Applying reduction Dcp2Cone
+(CVXPY) Jan 25 02:04:47 AM: Applying reduction CvxAttr2Constr
+(CVXPY) Jan 25 02:04:47 AM: Applying reduction ConeMatrixStuffing
+(CVXPY) Jan 25 02:12:11 AM: Applying reduction MOSEK
+(CVXPY) Jan 25 02:18:11 AM: Finished problem compilation (took 8.042e+02 seconds).
+-------------------------------------------------------------------------------
+                                Numerical solver                               
+-------------------------------------------------------------------------------
+(CVXPY) Jan 25 02:18:11 AM: Invoking solver MOSEK  to obtain a solution.
+
+
+Problem
+  Name                   :                 
+  Objective sense        : max             
+  Type                   : LO (linear optimization problem)
+  Constraints            : 42004           
+  Cones                  : 0               
+  Scalar variables       : 75811           
+  Matrix variables       : 0               
+  Integer variables      : 0               
+
+Optimizer started.
+Problem
+  Name                   :                 
+  Objective sense        : max             
+  Type                   : LO (linear optimization problem)
+  Constraints            : 42004           
+  Cones                  : 0               
+  Scalar variables       : 75811           
+  Matrix variables       : 0               
+  Integer variables      : 0               
+
+Optimizer  - threads                : 2               
+Optimizer  - solved problem         : the dual        
+Optimizer  - Constraints            : 73250
+Optimizer  - Cones                  : 0
+Optimizer  - Scalar variables       : 111661            conic                  : 0               
+Optimizer  - Semi-definite variables: 0                 scalarized             : 0               
+Factor     - setup time             : 23.01             dense det. time        : 5.03            
+Factor     - ML order time          : 0.03              GP order time          : 0.00            
+Factor     - nonzeros before factor : 5.79e+07          after factor           : 5.79e+07        
+Factor     - dense dim.             : 1787              flops                  : 5.15e+10        
+ITE PFEAS    DFEAS    GFEAS    PRSTATUS   POBJ              DOBJ              MU       TIME  
+0   2.1e+00  2.4e+00  6.2e+00  0.00e+00   1.999998000e+00   3.999998000e+00   4.3e+00  694.42
+1   1.3e+00  1.5e+00  4.0e+00  -9.49e-01  5.695139723e+00   7.136333342e+00   2.8e+00  706.78
+2   3.5e-02  4.0e-02  1.0e-01  -8.03e-01  1.225126744e+01   1.232511012e+01   7.2e-02  718.41
+3   1.7e-02  2.0e-02  5.2e-02  1.27e+01   2.596857489e+00   2.591078278e+00   3.6e-02  729.94
+4   9.6e-03  1.1e-02  2.9e-02  8.21e+00   2.047353359e+00   2.045900282e+00   2.0e-02  742.61
+5   5.3e-03  6.1e-03  1.6e-02  2.03e+00   2.026374882e+00   2.025799503e+00   1.1e-02  754.33
+6   1.1e-03  1.2e-03  3.2e-03  1.49e+00   2.014689863e+00   2.014606892e+00   2.2e-03  767.00
+7   5.8e-04  6.6e-04  1.7e-03  1.03e+00   2.013704729e+00   2.013660833e+00   1.2e-03  779.22
+8   4.3e-04  4.9e-04  1.3e-03  9.81e-01   2.013406026e+00   2.013373453e+00   8.9e-04  790.51
+9   3.2e-04  3.7e-04  9.7e-04  9.59e-01   2.013198346e+00   2.013173758e+00   6.7e-04  801.90
+10  2.2e-04  2.5e-04  6.5e-04  9.41e-01   2.012970718e+00   2.012954446e+00   4.5e-04  814.34
+11  1.5e-04  1.7e-04  4.5e-04  9.06e-01   2.012828853e+00   2.012817246e+00   3.1e-04  826.41
+12  1.1e-04  1.3e-04  3.4e-04  8.60e-01   2.012740024e+00   2.012730948e+00   2.4e-04  838.26
+13  8.9e-05  1.0e-04  2.7e-04  8.03e-01   2.012678390e+00   2.012670878e+00   1.8e-04  850.34
+14  7.6e-05  8.8e-05  2.3e-04  7.43e-01   2.012642795e+00   2.012636072e+00   1.6e-04  861.80
+15  6.5e-05  7.5e-05  1.9e-04  7.03e-01   2.012609741e+00   2.012603695e+00   1.3e-04  873.40
+16  5.3e-05  6.1e-05  1.6e-04  6.65e-01   2.012574389e+00   2.012569062e+00   1.1e-04  885.52
+17  4.5e-05  5.2e-05  1.3e-04  6.32e-01   2.012544627e+00   2.012539863e+00   9.3e-05  897.27
+18  3.8e-05  4.4e-05  1.1e-04  6.09e-01   2.012518235e+00   2.012513937e+00   7.8e-05  908.97
+19  3.3e-05  3.8e-05  9.8e-05  5.84e-01   2.012498054e+00   2.012494094e+00   6.8e-05  921.04
+20  2.9e-05  3.3e-05  8.7e-05  5.60e-01   2.012480212e+00   2.012476561e+00   6.0e-05  932.27
+21  2.4e-05  2.8e-05  7.4e-05  5.62e-01   2.012458529e+00   2.012455259e+00   5.1e-05  944.93
+22  2.2e-05  2.5e-05  6.5e-05  5.60e-01   2.012443501e+00   2.012440488e+00   4.5e-05  956.41
+23  1.8e-05  2.0e-05  5.4e-05  5.54e-01   2.012421256e+00   2.012418566e+00   3.7e-05  968.25
+24  1.6e-05  1.8e-05  4.8e-05  5.01e-01   2.012409419e+00   2.012406870e+00   3.3e-05  979.89
+Maximum amount of time 1000.00 is reached.
+Optimizer terminated. Time: 1008.44 
+
+
+Interior-point solution summary
+  Problem status  : UNKNOWN
+  Solution status : UNKNOWN
+  Primal.  obj: 2.0124094191e+00    nrm: 1e+00    Viol.  con: 2e-07    var: 2e-07  
+  Dual.    obj: 2.0124068704e+00    nrm: 1e+02    Viol.  con: 0e+00    var: 2e-07  
+Unexpected MOSEK error
+===============================================================================
+                                     CVXPY                                     
+                                    v1.1.17                                    
+===============================================================================
+(CVXPY) Jan 25 02:39:33 AM: Your problem has 5634 variables, 6 constraints, and 0 parameters.
+(CVXPY) Jan 25 02:39:33 AM: It is compliant with the following grammars: DCP, DQCP
+(CVXPY) Jan 25 02:39:33 AM: (If you need to solve this problem multiple times, but with different data, consider using parameters.)
+(CVXPY) Jan 25 02:39:33 AM: CVXPY will first compile your problem; then, it will invoke a numerical solver to obtain a solution.
+-------------------------------------------------------------------------------
+                                  Compilation                                  
+-------------------------------------------------------------------------------
+(CVXPY) Jan 25 02:39:33 AM: Compiling problem (target solver=MOSEK).
+(CVXPY) Jan 25 02:39:33 AM: Reduction chain: Dcp2Cone -> CvxAttr2Constr -> ConeMatrixStuffing -> MOSEK
+(CVXPY) Jan 25 02:39:33 AM: Applying reduction Dcp2Cone
+(CVXPY) Jan 25 02:39:33 AM: Applying reduction CvxAttr2Constr
+(CVXPY) Jan 25 02:39:33 AM: Applying reduction ConeMatrixStuffing
+(CVXPY) Jan 25 02:47:15 AM: Applying reduction MOSEK
+(CVXPY) Jan 25 02:53:12 AM: Finished problem compilation (took 8.190e+02 seconds).
+-------------------------------------------------------------------------------
+                                Numerical solver                               
+-------------------------------------------------------------------------------
+(CVXPY) Jan 25 02:53:12 AM: Invoking solver MOSEK  to obtain a solution.
+
+
+Problem
+  Name                   :                 
+  Objective sense        : max             
+  Type                   : LO (linear optimization problem)
+  Constraints            : 42004           
+  Cones                  : 0               
+  Scalar variables       : 75811           
+  Matrix variables       : 0               
+  Integer variables      : 0               
+
+Optimizer started.
+Problem
+  Name                   :                 
+  Objective sense        : max             
+  Type                   : LO (linear optimization problem)
+  Constraints            : 42004           
+  Cones                  : 0               
+  Scalar variables       : 75811           
+  Matrix variables       : 0               
+  Integer variables      : 0               
+
+Optimizer  - threads                : 2               
+Optimizer  - solved problem         : the dual        
+Optimizer  - Constraints            : 73250
+Optimizer  - Cones                  : 0
+Optimizer  - Scalar variables       : 111661            conic                  : 0               
+Optimizer  - Semi-definite variables: 0                 scalarized             : 0               
+Factor     - setup time             : 22.33             dense det. time        : 4.77            
+Factor     - ML order time          : 0.02              GP order time          : 0.00            
+Factor     - nonzeros before factor : 5.79e+07          after factor           : 5.79e+07        
+Factor     - dense dim.             : 1787              flops                  : 5.15e+10        
+ITE PFEAS    DFEAS    GFEAS    PRSTATUS   POBJ              DOBJ              MU       TIME  
+0   2.1e+00  2.4e+00  6.2e+00  0.00e+00   1.999998000e+00   3.999998000e+00   4.3e+00  688.54
+1   1.3e+00  1.5e+00  4.0e+00  -9.49e-01  5.695139723e+00   7.136333342e+00   2.8e+00  700.30
+2   3.5e-02  4.0e-02  1.0e-01  -8.03e-01  1.225126744e+01   1.232511012e+01   7.2e-02  712.12
+3   1.7e-02  2.0e-02  5.2e-02  1.27e+01   2.596857489e+00   2.591078278e+00   3.6e-02  723.68
+4   9.6e-03  1.1e-02  2.9e-02  8.21e+00   2.047353359e+00   2.045900282e+00   2.0e-02  736.22
+5   5.3e-03  6.1e-03  1.6e-02  2.03e+00   2.026374882e+00   2.025799503e+00   1.1e-02  748.31
+6   1.1e-03  1.2e-03  3.2e-03  1.49e+00   2.014689863e+00   2.014606892e+00   2.2e-03  760.90
+7   5.8e-04  6.6e-04  1.7e-03  1.03e+00   2.013704729e+00   2.013660833e+00   1.2e-03  772.94
+8   4.3e-04  4.9e-04  1.3e-03  9.81e-01   2.013406026e+00   2.013373453e+00   8.9e-04  784.61
+9   3.2e-04  3.7e-04  9.7e-04  9.59e-01   2.013198346e+00   2.013173758e+00   6.7e-04  795.89
+10  2.2e-04  2.5e-04  6.5e-04  9.41e-01   2.012970718e+00   2.012954446e+00   4.5e-04  808.19
+11  1.5e-04  1.7e-04  4.5e-04  9.06e-01   2.012828853e+00   2.012817246e+00   3.1e-04  820.66
+12  1.1e-04  1.3e-04  3.4e-04  8.60e-01   2.012740024e+00   2.012730948e+00   2.4e-04  832.37
+13  8.9e-05  1.0e-04  2.7e-04  8.03e-01   2.012678390e+00   2.012670878e+00   1.8e-04  844.20
+14  7.6e-05  8.8e-05  2.3e-04  7.43e-01   2.012642795e+00   2.012636072e+00   1.6e-04  856.09
+15  6.5e-05  7.5e-05  1.9e-04  7.03e-01   2.012609741e+00   2.012603695e+00   1.3e-04  867.58
+16  5.3e-05  6.1e-05  1.6e-04  6.65e-01   2.012574389e+00   2.012569062e+00   1.1e-04  879.61
+17  4.5e-05  5.2e-05  1.3e-04  6.32e-01   2.012544627e+00   2.012539863e+00   9.3e-05  891.71
+18  3.8e-05  4.4e-05  1.1e-04  6.09e-01   2.012518235e+00   2.012513937e+00   7.8e-05  903.20
+19  3.3e-05  3.8e-05  9.8e-05  5.84e-01   2.012498054e+00   2.012494094e+00   6.8e-05  915.23
+20  2.9e-05  3.3e-05  8.7e-05  5.60e-01   2.012480212e+00   2.012476561e+00   6.0e-05  926.89
+21  2.4e-05  2.8e-05  7.4e-05  5.62e-01   2.012458529e+00   2.012455259e+00   5.1e-05  939.16
+22  2.2e-05  2.5e-05  6.5e-05  5.60e-01   2.012443501e+00   2.012440488e+00   4.5e-05  950.91
+23  1.8e-05  2.0e-05  5.4e-05  5.54e-01   2.012421256e+00   2.012418566e+00   3.7e-05  962.86
+24  1.6e-05  1.8e-05  4.8e-05  5.01e-01   2.012409419e+00   2.012406870e+00   3.3e-05  974.16
+25  1.4e-05  1.7e-05  4.3e-05  4.90e-01   2.012396425e+00   2.012394009e+00   3.0e-05  985.98
+26  9.6e-06  9.4e-05  2.9e-05  7.48e-01   2.012362514e+00   2.012360907e+00   2.0e-05  1053.22
+Maximum amount of time 1000.00 is reached.
+Optimizer terminated. Time: 1066.00 
+
+
+Interior-point solution summary
+  Problem status  : UNKNOWN
+  Solution status : UNKNOWN
+  Primal.  obj: 2.0123625137e+00    nrm: 1e+00    Viol.  con: 1e-07    var: 1e-07  
+  Dual.    obj: 2.0123609073e+00    nrm: 1e+02    Viol.  con: 0e+00    var: 1e-06  
+Unexpected MOSEK error
+===============================================================================
+                                     CVXPY                                     
+                                    v1.1.17                                    
+===============================================================================
+(CVXPY) Jan 25 03:15:35 AM: Your problem has 5634 variables, 6 constraints, and 0 parameters.
+(CVXPY) Jan 25 03:15:35 AM: It is compliant with the following grammars: DCP, DQCP
+(CVXPY) Jan 25 03:15:35 AM: (If you need to solve this problem multiple times, but with different data, consider using parameters.)
+(CVXPY) Jan 25 03:15:35 AM: CVXPY will first compile your problem; then, it will invoke a numerical solver to obtain a solution.
+-------------------------------------------------------------------------------
+                                  Compilation                                  
+-------------------------------------------------------------------------------
+(CVXPY) Jan 25 03:15:35 AM: Compiling problem (target solver=MOSEK).
+(CVXPY) Jan 25 03:15:35 AM: Reduction chain: Dcp2Cone -> CvxAttr2Constr -> ConeMatrixStuffing -> MOSEK
+(CVXPY) Jan 25 03:15:35 AM: Applying reduction Dcp2Cone
+(CVXPY) Jan 25 03:15:35 AM: Applying reduction CvxAttr2Constr
+(CVXPY) Jan 25 03:15:35 AM: Applying reduction ConeMatrixStuffing
+(CVXPY) Jan 25 03:23:02 AM: Applying reduction MOSEK
+(CVXPY) Jan 25 03:29:07 AM: Finished problem compilation (took 8.124e+02 seconds).
+-------------------------------------------------------------------------------
+                                Numerical solver                               
+-------------------------------------------------------------------------------
+(CVXPY) Jan 25 03:29:07 AM: Invoking solver MOSEK  to obtain a solution.
+
+
+Problem
+  Name                   :                 
+  Objective sense        : max             
+  Type                   : LO (linear optimization problem)
+  Constraints            : 42004           
+  Cones                  : 0               
+  Scalar variables       : 75811           
+  Matrix variables       : 0               
+  Integer variables      : 0               
+
+Optimizer started.
+Problem
+  Name                   :                 
+  Objective sense        : max             
+  Type                   : LO (linear optimization problem)
+  Constraints            : 42004           
+  Cones                  : 0               
+  Scalar variables       : 75811           
+  Matrix variables       : 0               
+  Integer variables      : 0               
+
+Optimizer  - threads                : 2               
+Optimizer  - solved problem         : the dual        
+Optimizer  - Constraints            : 73250
+Optimizer  - Cones                  : 0
+Optimizer  - Scalar variables       : 111661            conic                  : 0               
+Optimizer  - Semi-definite variables: 0                 scalarized             : 0               
+Factor     - setup time             : 22.52             dense det. time        : 4.65            
+Factor     - ML order time          : 0.02              GP order time          : 0.00            
+Factor     - nonzeros before factor : 5.79e+07          after factor           : 5.79e+07        
+Factor     - dense dim.             : 1787              flops                  : 5.15e+10        
+ITE PFEAS    DFEAS    GFEAS    PRSTATUS   POBJ              DOBJ              MU       TIME  
+0   2.1e+00  2.4e+00  6.2e+00  0.00e+00   1.999998000e+00   3.999998000e+00   4.3e+00  686.74
+1   1.3e+00  1.5e+00  4.0e+00  -9.49e-01  5.695139723e+00   7.136333342e+00   2.8e+00  698.34
+2   3.5e-02  4.0e-02  1.0e-01  -8.03e-01  1.225126744e+01   1.232511012e+01   7.2e-02  709.82
+3   1.7e-02  2.0e-02  5.2e-02  1.27e+01   2.596857489e+00   2.591078278e+00   3.6e-02  721.41
+4   9.6e-03  1.1e-02  2.9e-02  8.21e+00   2.047353359e+00   2.045900282e+00   2.0e-02  734.05
+5   5.3e-03  6.1e-03  1.6e-02  2.03e+00   2.026374882e+00   2.025799503e+00   1.1e-02  745.58
+6   1.1e-03  1.2e-03  3.2e-03  1.49e+00   2.014689863e+00   2.014606892e+00   2.2e-03  758.25
+7   5.8e-04  6.6e-04  1.7e-03  1.03e+00   2.013704729e+00   2.013660833e+00   1.2e-03  770.38
+8   4.3e-04  4.9e-04  1.3e-03  9.81e-01   2.013406026e+00   2.013373453e+00   8.9e-04  781.67
+9   3.2e-04  3.7e-04  9.7e-04  9.59e-01   2.013198346e+00   2.013173758e+00   6.7e-04  793.20
+10  2.2e-04  2.5e-04  6.5e-04  9.41e-01   2.012970718e+00   2.012954446e+00   4.5e-04  805.28
+11  1.5e-04  1.7e-04  4.5e-04  9.06e-01   2.012828853e+00   2.012817246e+00   3.1e-04  817.37
+12  1.1e-04  1.3e-04  3.4e-04  8.60e-01   2.012740024e+00   2.012730948e+00   2.4e-04  829.38
+13  8.9e-05  1.0e-04  2.7e-04  8.03e-01   2.012678390e+00   2.012670878e+00   1.8e-04  841.01
+14  7.6e-05  8.8e-05  2.3e-04  7.43e-01   2.012642795e+00   2.012636072e+00   1.6e-04  852.57
+15  6.5e-05  7.5e-05  1.9e-04  7.03e-01   2.012609741e+00   2.012603695e+00   1.3e-04  864.33
+16  5.3e-05  6.1e-05  1.6e-04  6.65e-01   2.012574389e+00   2.012569062e+00   1.1e-04  876.13
+17  4.5e-05  5.2e-05  1.3e-04  6.32e-01   2.012544627e+00   2.012539863e+00   9.3e-05  888.04
+18  3.8e-05  4.4e-05  1.1e-04  6.09e-01   2.012518235e+00   2.012513937e+00   7.8e-05  899.55
+19  3.3e-05  3.8e-05  9.8e-05  5.84e-01   2.012498054e+00   2.012494094e+00   6.8e-05  911.47
+20  2.9e-05  3.3e-05  8.7e-05  5.60e-01   2.012480212e+00   2.012476561e+00   6.0e-05  923.11
+21  2.4e-05  2.8e-05  7.4e-05  5.62e-01   2.012458529e+00   2.012455259e+00   5.1e-05  935.36
+22  2.2e-05  2.5e-05  6.5e-05  5.60e-01   2.012443501e+00   2.012440488e+00   4.5e-05  946.92
+23  1.8e-05  2.0e-05  5.4e-05  5.54e-01   2.012421256e+00   2.012418566e+00   3.7e-05  958.94
+24  1.6e-05  1.8e-05  4.8e-05  5.01e-01   2.012409419e+00   2.012406870e+00   3.3e-05  970.02
+Maximum amount of time 1000.00 is reached.
+Optimizer terminated. Time: 1008.60 
+
+
+Interior-point solution summary
+  Problem status  : UNKNOWN
+  Solution status : UNKNOWN
+  Primal.  obj: 2.0124094191e+00    nrm: 1e+00    Viol.  con: 2e-07    var: 2e-07  
+  Dual.    obj: 2.0124068704e+00    nrm: 1e+02    Viol.  con: 0e+00    var: 2e-07  
+Unexpected MOSEK error
+===============================================================================
+                                     CVXPY                                     
+                                    v1.1.17                                    
+===============================================================================
+(CVXPY) Jan 25 03:50:20 AM: Your problem has 5634 variables, 6 constraints, and 0 parameters.
+(CVXPY) Jan 25 03:50:20 AM: It is compliant with the following grammars: DCP, DQCP
+(CVXPY) Jan 25 03:50:20 AM: (If you need to solve this problem multiple times, but with different data, consider using parameters.)
+(CVXPY) Jan 25 03:50:20 AM: CVXPY will first compile your problem; then, it will invoke a numerical solver to obtain a solution.
+-------------------------------------------------------------------------------
+                                  Compilation                                  
+-------------------------------------------------------------------------------
+(CVXPY) Jan 25 03:50:20 AM: Compiling problem (target solver=MOSEK).
+(CVXPY) Jan 25 03:50:20 AM: Reduction chain: Dcp2Cone -> CvxAttr2Constr -> ConeMatrixStuffing -> MOSEK
+(CVXPY) Jan 25 03:50:20 AM: Applying reduction Dcp2Cone
+(CVXPY) Jan 25 03:50:25 AM: Applying reduction CvxAttr2Constr
+(CVXPY) Jan 25 03:50:25 AM: Applying reduction ConeMatrixStuffing
+(CVXPY) Jan 25 03:58:20 AM: Applying reduction MOSEK
+(CVXPY) Jan 25 04:04:21 AM: Finished problem compilation (took 8.405e+02 seconds).
+-------------------------------------------------------------------------------
+                                Numerical solver                               
+-------------------------------------------------------------------------------
+(CVXPY) Jan 25 04:04:21 AM: Invoking solver MOSEK  to obtain a solution.
+
+
+Problem
+  Name                   :                 
+  Objective sense        : max             
+  Type                   : LO (linear optimization problem)
+  Constraints            : 42004           
+  Cones                  : 0               
+  Scalar variables       : 75811           
+  Matrix variables       : 0               
+  Integer variables      : 0               
+
+Optimizer started.
+Problem
+  Name                   :                 
+  Objective sense        : max             
+  Type                   : LO (linear optimization problem)
+  Constraints            : 42004           
+  Cones                  : 0               
+  Scalar variables       : 75811           
+  Matrix variables       : 0               
+  Integer variables      : 0               
+
+Optimizer  - threads                : 2               
+Optimizer  - solved problem         : the dual        
+Optimizer  - Constraints            : 73250
+Optimizer  - Cones                  : 0
+Optimizer  - Scalar variables       : 111661            conic                  : 0               
+Optimizer  - Semi-definite variables: 0                 scalarized             : 0               
+Factor     - setup time             : 22.34             dense det. time        : 4.97            
+Factor     - ML order time          : 0.02              GP order time          : 0.00            
+Factor     - nonzeros before factor : 5.79e+07          after factor           : 5.79e+07        
+Factor     - dense dim.             : 1787              flops                  : 5.15e+10        
+ITE PFEAS    DFEAS    GFEAS    PRSTATUS   POBJ              DOBJ              MU       TIME  
+0   2.1e+00  2.4e+00  6.2e+00  0.00e+00   1.999998000e+00   3.999998000e+00   4.3e+00  688.98
+1   1.3e+00  1.5e+00  4.0e+00  -9.49e-01  5.695139723e+00   7.136333342e+00   2.8e+00  701.17
+2   3.5e-02  4.0e-02  1.0e-01  -8.03e-01  1.225126744e+01   1.232511012e+01   7.2e-02  713.42
+3   1.7e-02  2.0e-02  5.2e-02  1.27e+01   2.596857489e+00   2.591078278e+00   3.6e-02  725.59
+4   9.6e-03  1.1e-02  2.9e-02  8.21e+00   2.047353359e+00   2.045900282e+00   2.0e-02  738.41
+5   5.3e-03  6.1e-03  1.6e-02  2.03e+00   2.026374882e+00   2.025799503e+00   1.1e-02  750.91
+6   1.1e-03  1.2e-03  3.2e-03  1.49e+00   2.014689863e+00   2.014606892e+00   2.2e-03  764.16
+7   5.8e-04  6.6e-04  1.7e-03  1.03e+00   2.013704729e+00   2.013660833e+00   1.2e-03  776.58
+8   4.3e-04  4.9e-04  1.3e-03  9.81e-01   2.013406026e+00   2.013373453e+00   8.9e-04  788.62
+9   3.2e-04  3.7e-04  9.7e-04  9.59e-01   2.013198346e+00   2.013173758e+00   6.7e-04  800.63
+10  2.2e-04  2.5e-04  6.5e-04  9.41e-01   2.012970718e+00   2.012954446e+00   4.5e-04  813.18
+11  1.5e-04  1.7e-04  4.5e-04  9.06e-01   2.012828853e+00   2.012817246e+00   3.1e-04  826.06
+12  1.1e-04  1.3e-04  3.4e-04  8.60e-01   2.012740024e+00   2.012730948e+00   2.4e-04  838.45
+13  8.9e-05  1.0e-04  2.7e-04  8.03e-01   2.012678390e+00   2.012670878e+00   1.8e-04  850.67
+14  7.6e-05  8.8e-05  2.3e-04  7.43e-01   2.012642795e+00   2.012636072e+00   1.6e-04  862.87
+15  6.5e-05  7.5e-05  1.9e-04  7.03e-01   2.012609741e+00   2.012603695e+00   1.3e-04  875.10
+16  5.3e-05  6.1e-05  1.6e-04  6.65e-01   2.012574389e+00   2.012569062e+00   1.1e-04  887.49
